@@ -1066,9 +1066,9 @@ p:last-child { margin-bottom: 0; }
 .mn-tv__video-wrap--ph { background: #f0f0f0; }
 .mn-tv__video {
   height: 100%;
-  width: auto;
-  max-width: 100%;
+  width: 100%;
   display: block;
+  border: none;
 }
 .mn-tv__info {
   padding: 1.25rem 1.4rem;
