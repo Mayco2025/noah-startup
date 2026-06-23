@@ -1,0 +1,39 @@
+[build]
+  publish = "frontend"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "/consulting"
+  to = "/services.html#business"
+  status = 301
+
+[[redirects]]
+  from = "/consulting.html"
+  to = "/services.html#business"
+  status = 301
+
+[[redirects]]
+  from = "/trade"
+  to = "/services.html#business"
+  status = 301
+
+[[redirects]]
+  from = "/trade.html"
+  to = "/services.html#business"
+  status = 301
+
+[[redirects]]
+  from = "/ethiomirai-nihongo"
+  to = "/maya-nihongo.html"
+  status = 301
+
+[[redirects]]
+  from = "/ethiomirai-nihongo.html"
+  to = "/maya-nihongo.html"
+  status = 301
