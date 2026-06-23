@@ -3800,6 +3800,134 @@ html, body { overflow-x: clip; }
   .stat-num { font-size: 1.5rem; }
 }
 
+/* ── Maya Nihongo: school marquee ── */
+.mn-school-marquee {
+  background: linear-gradient(135deg, #1B5E3B 0%, #1B7A3D 100%);
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+}
+.mn-sm-label {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 14px 22px 14px 24px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  white-space: nowrap;
+  border-right: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.08);
+}
+.mn-sm-track-wrap {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+.mn-sm-track-wrap::before,
+.mn-sm-track-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 60px;
+  z-index: 2;
+  pointer-events: none;
+}
+.mn-sm-track-wrap::before { left: 0;  background: linear-gradient(90deg, #1B6B37, transparent); }
+.mn-sm-track-wrap::after  { right: 0; background: linear-gradient(-90deg, #1B7A3D, transparent); }
+.mn-sm-track {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  width: max-content;
+  padding: 14px 0;
+  animation: marqueeScroll 40s linear infinite;
+}
+.mn-school-marquee:hover .mn-sm-track { animation-play-state: paused; }
+.mn-sm-track span {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.88);
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+.mn-sm-track i {
+  font-style: normal;
+  color: rgba(255,255,255,0.28);
+  font-size: 0.5rem;
+  flex-shrink: 0;
+}
+@media (max-width: 600px) {
+  .mn-sm-label { display: none; }
+  .mn-sm-track span { font-size: 0.78rem; }
+}
+
+/* ── Maya Nihongo: trust strip ── */
+.mn-trust-strip {
+  padding: 48px 0;
+  background: var(--off-white);
+  border-top: 1px solid var(--gray-200);
+  border-bottom: 1px solid var(--gray-200);
+}
+.mn-trust-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 28px;
+}
+.mn-trust-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+.mn-trust-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 16px 32px;
+  transition: opacity 0.2s;
+}
+.mn-trust-logo:hover { opacity: 0.75; }
+.mn-tl-name {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.01em;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.mn-tl-sub {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  max-width: 160px;
+  line-height: 1.4;
+}
+.mn-trust-sep {
+  width: 1px;
+  height: 40px;
+  background: var(--gray-300);
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .mn-trust-logos { gap: 8px; }
+  .mn-trust-sep { display: none; }
+  .mn-trust-logo { padding: 14px 20px; border: 1px solid var(--gray-200); border-radius: var(--radius-lg); background: var(--white); }
+  .mn-tl-name { font-size: 1.125rem; }
+  .mn-tl-sub { font-size: 0.6rem; }
+}
+
 /* ── News coming-soon block ── */
 .news-coming-soon {
   display: flex;
