@@ -24,9 +24,10 @@
       el.placeholder = (ja && el.dataset.phJa) ? el.dataset.phJa : el.dataset.phEn;
     });
 
-    /* <option> labels: data-en / data-ja */
+    /* <option> labels: data-en / data-ja (submitted value stays English) */
     document.querySelectorAll('option[data-en]').forEach(opt => {
       opt.textContent = (ja && opt.dataset.ja) ? opt.dataset.ja : opt.dataset.en;
+      if (!opt.hasAttribute('value')) opt.setAttribute('value', opt.dataset.en);
     });
 
     /* <title> / meta description: data-title-ja etc. on <body> */
@@ -141,7 +142,7 @@
     });
   });
 
-  /* ── Contact / inquiry form submit ──────────────────────── */
+  /* ── Contact / inquiry form submit (Netlify Forms) ───────── */
   document.querySelectorAll('form[data-form]').forEach(form => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -153,12 +154,32 @@
       });
       if (!valid) return;
       const btn = form.querySelector('[type="submit"]');
+      const original = btn ? btn.innerHTML : '';
       if (btn) {
-        const original = btn.innerHTML;
-        btn.textContent = isJa() ? '送信しました。折り返しご連絡いたします。' : 'Sent — we will be in touch.';
+        btn.textContent = isJa() ? '送信中…' : 'Sending…';
         btn.disabled = true;
-        setTimeout(() => { btn.innerHTML = original; btn.disabled = false; form.reset(); }, 5000);
       }
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString()
+      })
+      .then(res => {
+        if (!res.ok) throw new Error('Form submit failed: ' + res.status);
+        if (btn) {
+          btn.textContent = isJa() ? '送信しました。折り返しご連絡いたします。' : 'Sent — we will be in touch.';
+          setTimeout(() => { btn.innerHTML = original; btn.disabled = false; }, 5000);
+        }
+        form.reset();
+      })
+      .catch(() => {
+        if (btn) {
+          btn.textContent = isJa()
+            ? '送信できませんでした。info@ethiomirai.com までご連絡ください。'
+            : 'Could not send — please email info@ethiomirai.com';
+          setTimeout(() => { btn.innerHTML = original; btn.disabled = false; }, 6000);
+        }
+      });
     });
   });
 

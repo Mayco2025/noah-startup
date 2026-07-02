@@ -103,7 +103,9 @@
               <div class="tab-panel active" data-panel="general">
                 <div class="form-block">
                   <h3><span class="i-en">Send Us a Message</span><span class="i-ja" lang="ja">メッセージを送る</span></h3>
-                  <form data-form="general" novalidate>
+                  <form name="general-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-form="general" novalidate>
+                    <input type="hidden" name="form-name" value="general-inquiry">
+                    <p hidden aria-hidden="true"><label>Don't fill this out: <input name="bot-field"></label></p>
                     <div class="form-row">
                       <div class="form-group">
                         <label for="g-name"><span class="i-en">Full Name</span><span class="i-ja" lang="ja">お名前</span> <span style="color:#C0392B">*</span></label>
@@ -144,7 +146,9 @@
                   <h3><span class="i-en">Business Inquiry</span><span class="i-ja" lang="ja">ビジネスのご相談</span></h3>
                   <p class="i-en" style="font-size:0.9375rem; color:var(--text-muted); margin-bottom:24px;">For organizations and businesses seeking business matching, market insights, or partnership support between Ethiopia and Japan.</p>
                   <p class="i-ja" lang="ja" style="font-size:0.9375rem; color:var(--text-muted); margin-bottom:24px;">ビジネスマッチング、市場インサイト、日本とエチオピア間の提携支援をお探しの企業・団体向けの窓口です。</p>
-                  <form data-form="business" novalidate>
+                  <form name="business-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-form="business" novalidate>
+                    <input type="hidden" name="form-name" value="business-inquiry">
+                    <p hidden aria-hidden="true"><label>Don't fill this out: <input name="bot-field"></label></p>
                     <div class="form-row">
                       <div class="form-group">
                         <label for="b-name"><span class="i-en">Contact Name</span><span class="i-ja" lang="ja">ご担当者名</span> <span style="color:#C0392B">*</span></label>
@@ -199,7 +203,9 @@
                   <h3><span class="i-en">Partnership Inquiry</span><span class="i-ja" lang="ja">提携のご相談</span></h3>
                   <p class="i-en" style="font-size:0.9375rem; color:var(--text-muted); margin-bottom:24px;">For organizations, institutions, and individuals interested in forming a partnership with EthioMirai on education, cultural exchange, or international initiatives.</p>
                   <p class="i-ja" lang="ja" style="font-size:0.9375rem; color:var(--text-muted); margin-bottom:24px;">教育、文化交流、国際的な取り組みでエチオ未来との提携をご検討の組織・機関・個人向けの窓口です。</p>
-                  <form data-form="partnership" novalidate>
+                  <form name="partnership-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-form="partnership" novalidate>
+                    <input type="hidden" name="form-name" value="partnership-inquiry">
+                    <p hidden aria-hidden="true"><label>Don't fill this out: <input name="bot-field"></label></p>
                     <div class="form-row">
                       <div class="form-group">
                         <label for="p-name"><span class="i-en">Contact Name</span><span class="i-ja" lang="ja">ご担当者名</span> <span style="color:#C0392B">*</span></label>
