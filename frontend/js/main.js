@@ -109,11 +109,36 @@
 
   /* ── Active nav link ─────────────────────────────────────── */
   const currentFile = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
-    const href = (link.getAttribute('href') || '').split('/').pop();
+  document.querySelectorAll('.nav-link, .mobile-nav-link, .nav-dropdown__link').forEach(link => {
+    const href = (link.getAttribute('href') || '').split('/').pop().split('#')[0];
     if (href === currentFile || (currentFile === '' && href === 'index.html')) {
       link.classList.add('active');
     }
+  });
+  if (currentFile === 'services.html' || currentFile === 'maya-nihongo.html') {
+    document.querySelectorAll('.nav-dropdown__toggle').forEach(t => t.classList.add('active'));
+  }
+
+  /* ── Nav dropdown (What We Do) ────────────────────────────── */
+  document.querySelectorAll('.nav-dropdown__toggle').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const parent = btn.closest('.nav-dropdown');
+      document.querySelectorAll('.nav-dropdown.open').forEach(d => {
+        if (d !== parent) {
+          d.classList.remove('open');
+          d.querySelector('.nav-dropdown__toggle')?.setAttribute('aria-expanded', 'false');
+        }
+      });
+      const isOpen = parent.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  });
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.nav-dropdown.open').forEach(d => {
+      d.classList.remove('open');
+      d.querySelector('.nav-dropdown__toggle')?.setAttribute('aria-expanded', 'false');
+    });
   });
 
   /* ── Contact / inquiry form submit ──────────────────────── */
@@ -139,18 +164,23 @@
 
   /* ── Inquiry tabs ────────────────────────────────────────── */
   const tabNavs = document.querySelectorAll('.tab-nav');
+  const activateTab = (container, target) => {
+    const btn = container.querySelector('.tab-btn[data-tab="' + target + '"]');
+    const panel = container.querySelector('[data-panel="' + target + '"]');
+    if (!btn || !panel) return false;
+    container.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    container.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    panel.classList.add('active');
+    return true;
+  };
   tabNavs.forEach(nav => {
+    const container = nav.closest('.tab-section') || nav.closest('section') || document;
     nav.querySelectorAll('.tab-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const target = btn.dataset.tab;
-        const container = btn.closest('.tab-section') || btn.closest('section') || document;
-        container.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        container.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-        btn.classList.add('active');
-        const panel = container.querySelector('[data-panel="' + target + '"]');
-        if (panel) panel.classList.add('active');
-      });
+      btn.addEventListener('click', () => activateTab(container, btn.dataset.tab));
     });
+    const hashTarget = window.location.hash.slice(1);
+    if (hashTarget) activateTab(container, hashTarget);
   });
 
   /* ── Counter animation for stats ─────────────────────────── */

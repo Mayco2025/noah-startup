@@ -7,22 +7,22 @@ EthioMirai (エチオ未来, "Mirai" = Future) is a Japan–Ethiopia **bridge or
 
 ## Core Pillars (exactly 3)
 1. **Education & Opportunity** — student support, study-in-Japan guidance, language support, educational partnerships, career guidance. Includes Maya Nihongo.
-2. **Cultural Exchange & Travel Support** — exchange programs, events/seminars, delegation visits, travel support, local guidance, media & storytelling. NEVER position as travel agency / tour operator / package tours.
+2. **Tourism & Cultural Exchange** — delegation & exchange visits, travel experiences & visitor support, local guidance, media & storytelling. NEVER position as travel agency / tour operator / package tours.
 3. **Business & Partnership Support** — business matching, partnership development, market research support, translation/interpretation, meeting coordination, delegation support, project facilitation.
 
 ## Maya Nihongo
 Sub-brand name is **"Maya Nihongo"** (do NOT rename). Position as: "Maya Nihongo – EthioMirai's Japanese Language & Student Support Program" under the Education pillar. Page: `frontend/maya-nihongo.html` (old `ethiomirai-nihongo.html` is a redirect stub).
 
 ## Leadership (always show BOTH — never single-founder)
-- **Noah Eskindir** — Founder & Japan Director. Ethiopian, based in Japan. JLPT N2; Waseda Bunri College grad (Embedded Software Engineering); Software Engineer at Castalia Co., Ltd.; project experience with JICA, AOTS, UNESCO/IICBA; founder of Maya Nihongo. Leads: Education & Opportunity, strategic partnerships, tech/ops, Japan side.
-- **Tegegn Begashaw Abate** — Co-Founder & Ethiopia Relations Director. BA Tourism Management; tour planning, events, cross-cultural communication, business development. Leads: Cultural Exchange & Travel Support, Ethiopia-side partnerships, community relations, delegation/visitor support.
+- **Noah Eskindir** — Founder & CEO. Ethiopian, based in Japan 7+ years. JLPT N2; Waseda Bunri College grad (Embedded Software Engineering); founder of EthioMirai LLC and Maya Nihongo; project experience with JICA, AOTS, UNESCO/IICBA; educator/content creator (TikTok 96k+, Facebook 9k+, YouTube 4k+). Leads: Japan–Ethiopia market development, strategic partnerships, Education & Opportunity, tech/innovation, Japan side.
+- **Tegegn Begashaw Abate** — Co-Founder & Ethiopia Relations Director. BA Tourism Management; tour planning, events, cross-cultural communication, business development. Leads: Tourism & Cultural Exchange, Ethiopia-side partnerships, community relations, delegation/visitor support.
 
 ## Differentiators
 Leadership on both sides; real experience living/working in both cultures; trilingual (Japanese, Amharic, English); personal networks in both countries.
 
 ## Content Rules
 - Homepage must communicate "a Japan–Ethiopia bridge organization" + the 3 pillars within 10 seconds. Avoid clutter / long service lists on homepage.
-- Do NOT mention YouTube or TikTok (for now). Socials: LinkedIn, Instagram only.
+- Org-level socials: LinkedIn, Instagram only. Noah's personal bio (about.html) is the exception — it cites his TikTok/Facebook/YouTube following as a credential.
 - Do NOT focus on coffee or machinery trade — `consulting.html` and `trade.html` are now redirect stubs to `services.html#business`; don't resurrect them.
 - Tone: professional, trustworthy, modern, international, human-centered. Prefer real photos over generic icons/illustrations.
 

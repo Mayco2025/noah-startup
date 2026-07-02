@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About &mdash; EthioMirai</title>
-  <meta name="description" content="About EthioMirai, a Japan–Ethiopia bridge organization, and its leadership: Noah Eskindir (Founder &amp; Japan Director) and Tegegn Begashaw Abate (Co-Founder &amp; Ethiopia Relations Director).">
+  <meta name="description" content="About EthioMirai, a Japan–Ethiopia bridge organization, and its leadership: Noah Eskindir (Founder &amp; CEO) and Tegegn Begashaw Abate (Co-Founder &amp; Ethiopia Relations Director).">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
@@ -27,8 +27,15 @@
         <ul class="nav-menu">
           <li><a href="index.html" class="nav-link"><span class="i-en">Home</span><span class="i-ja" lang="ja">ホーム</span></a></li>
           <li><a href="about.html" class="nav-link"><span class="i-en">About</span><span class="i-ja" lang="ja">私たちについて</span></a></li>
-          <li><a href="services.html" class="nav-link"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span></a></li>
-          <li><a href="maya-nihongo.html" class="nav-link"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link nav-dropdown__toggle" type="button" aria-haspopup="true" aria-expanded="false"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span><span class="nav-dropdown__caret"></span></button>
+            <ul class="nav-dropdown__menu">
+              <li><a href="services.html#education" class="nav-dropdown__link"><span class="i-en">Education &amp; Opportunity</span><span class="i-ja" lang="ja">教育と機会</span></a></li>
+              <li><a href="maya-nihongo.html" class="nav-dropdown__link nav-dropdown__link--sub"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a></li>
+              <li><a href="services.html#cultural-exchange" class="nav-dropdown__link"><span class="i-en">Tourism &amp; Cultural Exchange</span><span class="i-ja" lang="ja">観光と文化交流</span></a></li>
+              <li><a href="services.html#business" class="nav-dropdown__link"><span class="i-en">Business &amp; Partnership Support</span><span class="i-ja" lang="ja">ビジネスと提携支援</span></a></li>
+            </ul>
+          </li>
           <li><a href="news.html" class="nav-link"><span class="i-en">News</span><span class="i-ja" lang="ja">ニュース</span></a></li>
           <li><a href="contact.html" class="nav-link nav-cta"><span class="i-en">Contact</span><span class="i-ja" lang="ja">お問い合わせ</span></a></li>
           <li class="lang-switch" aria-label="Language switch">
@@ -36,6 +43,10 @@
             <button class="lang-btn" data-setlang="ja" type="button" lang="ja">日本語</button>
           </li>
         </ul>
+        <div class="nav-lang-mobile" aria-label="Language switch">
+          <button class="lang-btn" data-setlang="en" type="button">EN</button>
+          <button class="lang-btn" data-setlang="ja" type="button" lang="ja">日本語</button>
+        </div>
         <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
           <span></span><span></span><span></span>
         </button>
@@ -46,7 +57,7 @@
         <a href="index.html" class="mobile-nav-link"><span class="i-en">Home</span><span class="i-ja" lang="ja">ホーム</span></a>
         <a href="about.html" class="mobile-nav-link"><span class="i-en">About</span><span class="i-ja" lang="ja">私たちについて</span></a>
         <a href="services.html" class="mobile-nav-link"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span></a>
-        <a href="maya-nihongo.html" class="mobile-nav-link"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a>
+        <a href="maya-nihongo.html" class="mobile-nav-link mobile-nav-link--sub"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a>
         <a href="news.html" class="mobile-nav-link"><span class="i-en">News</span><span class="i-ja" lang="ja">ニュース</span></a>
         <a href="contact.html" class="mobile-nav-link mobile-nav-link--cta"><span class="i-en">Contact Us</span><span class="i-ja" lang="ja">お問い合わせ</span></a>
         <div class="lang-switch">
@@ -86,8 +97,8 @@
             <p class="i-ja" lang="ja">エチオ未来（EthioMirai）は、日本とエチオピアの間に機会とつながりを生み出すことを目的としたブリッジ組織です。ミッションは、<strong>教育・文化交流・ビジネスパートナーシップを通じて日本とエチオピアをつなぐこと</strong>です。</p>
             <p class="i-en">The name "Mirai" (<span lang="ja">未来</span>) means "future" in Japanese &mdash; a reflection of what we build: lasting opportunities and relationships between the two nations.</p>
             <p class="i-ja" lang="ja">名前の「未来」は、私たちが築くもの——両国の間の永続的な機会と関係——をそのまま表しています。</p>
-            <p class="i-en">We are not a travel agency, a language school, or a consulting firm alone. We are a bridge organization that operates through three core pillars: <a href="services.html#education">Education &amp; Opportunity</a>, <a href="services.html#cultural-exchange">Cultural Exchange &amp; Travel Support</a>, and <a href="services.html#business">Business &amp; Partnership Support</a>.</p>
-            <p class="i-ja" lang="ja">私たちは旅行会社でも、語学学校でも、単なるコンサルティング会社でもありません。<a href="services.html#education">教育と機会</a>、<a href="services.html#cultural-exchange">文化交流と渡航サポート</a>、<a href="services.html#business">ビジネスと提携支援</a>という3つの柱で活動する「架け橋」の組織です。</p>
+            <p class="i-en">We are not a travel agency, a language school, or a consulting firm alone. We are a bridge organization that operates through three core pillars: <a href="services.html#education">Education &amp; Opportunity</a>, <a href="services.html#cultural-exchange">Tourism &amp; Cultural Exchange</a>, and <a href="services.html#business">Business &amp; Partnership Support</a>.</p>
+            <p class="i-ja" lang="ja">私たちは旅行会社でも、語学学校でも、単なるコンサルティング会社でもありません。<a href="services.html#education">教育と機会</a>、<a href="services.html#cultural-exchange">観光と文化交流</a>、<a href="services.html#business">ビジネスと提携支援</a>という3つの柱で活動する「架け橋」の組織です。</p>
             <p class="i-en">EthioMirai is built on years of firsthand experience living, studying, working, and building networks in both Japan and Ethiopia. Operating in Japanese, Amharic, and English, we serve as a trusted bridge for individuals, communities, and organizations on both sides.</p>
             <p class="i-ja" lang="ja">エチオ未来は、日本とエチオピアの両国で暮らし、学び、働き、ネットワークを築いてきた長年の実体験の上に成り立っています。日本語・アムハラ語・英語で活動し、両国の個人・コミュニティ・組織にとって信頼できる架け橋となります。</p>
           </div>
@@ -122,19 +133,52 @@
           </div>
           <div class="reveal-right">
             <div class="founder-name"><span class="i-en">Noah Eskindir</span><span class="i-ja" lang="ja">ノア・エスキンディル</span></div>
-            <div class="founder-role"><span class="i-en">Founder &amp; Japan Director</span><span class="i-ja" lang="ja">創設者・日本ディレクター</span></div>
+            <div class="founder-role"><span class="i-en">Founder &amp; CEO</span><span class="i-ja" lang="ja">創設者・CEO</span></div>
             <div class="founder-bio">
-              <p class="i-en">Noah is an Ethiopian professional based in Japan. He completed a Japanese Language and University Preparation Program in Japan, holds JLPT N2 certification, and graduated from Waseda Bunri College with a specialization in Embedded Software Engineering. He works as a Software Engineer at Castalia Co., Ltd.</p>
-              <p class="i-ja" lang="ja">ノアは日本を拠点とするエチオピア出身のプロフェッショナルです。日本で日本語・大学進学準備プログラムを修了し、JLPT N2を取得。早稲田文理専門学校で組込みソフトウェア工学を専攻し、現在はカスタリア株式会社でソフトウェアエンジニアとして働いています。</p>
-              <p class="i-en">Through his professional work, Noah has supported international education and capacity-building projects involving organizations such as JICA, AOTS, UNESCO/IICBA, and educational institutions. He works in Japanese, English, and Amharic, with a strong understanding of Japanese business culture and Ethiopian environments.</p>
-              <p class="i-ja" lang="ja">業務を通じて、JICA、AOTS、ユネスコ/IICBA、教育機関などが関わる国際教育・人材育成プロジェクトを支援してきました。日本語・英語・アムハラ語で働き、日本のビジネス文化とエチオピアの環境の双方を深く理解しています。</p>
-              <p class="i-en">Noah is the founder of Maya Nihongo, EthioMirai&rsquo;s Japanese Language &amp; Student Support Program, and is active as a social media educator and content creator for the Ethiopia&ndash;Japan community.</p>
-              <p class="i-ja" lang="ja">エチオ未来の日本語・留学生支援プログラム「マヤ日本語」の創設者でもあり、エチオピアと日本のコミュニティに向けたSNS教育・コンテンツ発信にも取り組んでいます。</p>
+              <p class="i-en">Noah Eskindir is the Founder &amp; CEO of EthioMirai, building lasting connections between Japan and Ethiopia through education, business, technology, tourism support, and cultural exchange. Originally from Ethiopia and based in Japan for over seven years, he combines experience as an entrepreneur, software engineer, educator, and cross-cultural professional to make collaboration between the two countries more accessible, practical, and sustainable.</p>
+              <p class="i-ja" lang="ja">ノア・エスキンディルは、教育・ビジネス・テクノロジー・観光サポート・文化交流を通じて日本とエチオピアの永続的なつながりを築く「エチオ未来」の創設者兼CEOです。エチオピア出身で7年以上日本を拠点に活動し、起業家、ソフトウェアエンジニア、教育者、異文化間の専門家としての経験を活かして、両国の協力をより身近で実践的、持続可能なものにすることを目指しています。</p>
+              <p class="i-en">His deep understanding of Japanese language, business culture, and professional practices &mdash; paired with strong roots and networks in Ethiopia &mdash; lets him bridge cultural and business gaps and support successful partnerships. Professionally, he has contributed to international education and technology initiatives with organizations such as JICA, AOTS, UNESCO/IICBA, and universities in both countries, and founded Maya Nihongo, EthioMirai&rsquo;s Japanese Language &amp; Student Support Program.</p>
+              <p class="i-ja" lang="ja">日本語やビジネス文化、職業実務への深い理解と、エチオピアに根ざした強い基盤・ネットワークを併せ持つことで、文化やビジネスの隔たりを埋め、両国間の成功したパートナーシップを支えています。業務ではJICA、AOTS、ユネスコ/IICBA、日本・エチオピアの大学などと国際教育・テクノロジー分野のプロジェクトに携わり、日本語・留学生支援プログラム「マヤ日本語」を創設しました。</p>
+              <p class="i-en">Beyond his professional work, Noah is a recognized educator and content creator, sharing practical insights about Japanese language, culture, business, and life in Japan &mdash; building one of the largest Ethiopia&ndash;Japan online communities, reaching more than 100,000 people across social media.</p>
+              <p class="i-ja" lang="ja">本業に加え、日本語・文化・ビジネス・日本での生活について実践的な知見を発信する教育者・コンテンツクリエイターとしても知られ、SNS上で10万人以上にリーチする、エチオピアと日本をつなぐ最大級のオンラインコミュニティの一つを築いています。</p>
             </div>
+
+            <div class="reach-stats">
+              <div class="reach-stat">
+                <div class="reach-stat__icon reach-stat__icon--tiktok">
+                  <svg viewBox="0 0 24 24"><path d="M12.53.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" fill="currentColor"/></svg>
+                </div>
+                <div class="reach-stat__num">96,000+</div>
+                <div class="reach-stat__label"><span class="i-en">TikTok Followers</span><span class="i-ja" lang="ja">TikTokフォロワー</span></div>
+              </div>
+              <div class="reach-stat">
+                <div class="reach-stat__icon reach-stat__icon--facebook">
+                  <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.87v-6.99H7.9v-2.88h2.6V9.8c0-2.57 1.53-4 3.87-4 1.11 0 2.27.2 2.27.2v2.5h-1.28c-1.26 0-1.65.78-1.65 1.58v1.9h2.81l-.45 2.88h-2.36v6.99A10 10 0 0 0 22 12z" fill="currentColor"/></svg>
+                </div>
+                <div class="reach-stat__num">9,000+</div>
+                <div class="reach-stat__label"><span class="i-en">Facebook Followers</span><span class="i-ja" lang="ja">Facebookフォロワー</span></div>
+              </div>
+              <div class="reach-stat">
+                <div class="reach-stat__icon reach-stat__icon--youtube">
+                  <svg viewBox="0 0 24 24"><path d="M23.498 6.186a2.94 2.94 0 0 0-2.07-2.07C19.692 3.5 12 3.5 12 3.5s-7.692 0-9.428.616a2.94 2.94 0 0 0-2.07 2.07A30.07 30.07 0 0 0 0 12a30.07 30.07 0 0 0 .502 5.814 2.94 2.94 0 0 0 2.07 2.07C4.308 20.5 12 20.5 12 20.5s7.692 0 9.428-.616a2.94 2.94 0 0 0 2.07-2.07A30.07 30.07 0 0 0 24 12a30.07 30.07 0 0 0-.502-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" fill="currentColor"/></svg>
+                </div>
+                <div class="reach-stat__num">4,000+</div>
+                <div class="reach-stat__label"><span class="i-en">YouTube Subscribers</span><span class="i-ja" lang="ja">YouTube登録者</span></div>
+              </div>
+            </div>
+
             <div class="cred-table">
               <div class="cred-row">
                 <span class="cred-key"><span class="i-en">Based In</span><span class="i-ja" lang="ja">拠点</span></span>
                 <span class="cred-val"><span class="i-en">Japan</span><span class="i-ja" lang="ja">日本</span></span>
+              </div>
+              <div class="cred-row">
+                <span class="cred-key"><span class="i-en">Experience in Japan</span><span class="i-ja" lang="ja">日本での経験</span></span>
+                <span class="cred-val"><span class="i-en">Living, studying, and working in Japan for 7+ years</span><span class="i-ja" lang="ja">日本での生活・学業・仕事の経験：7年以上</span></span>
+              </div>
+              <div class="cred-row">
+                <span class="cred-key"><span class="i-en">Profession</span><span class="i-ja" lang="ja">職業</span></span>
+                <span class="cred-val"><span class="i-en">Founder &amp; CEO, EthioMirai LLC &middot; Entrepreneur &middot; Software Engineer &middot; Educator</span><span class="i-ja" lang="ja">エチオ未来LLC 創設者兼CEO／起業家・ソフトウェアエンジニア・教育者</span></span>
               </div>
               <div class="cred-row">
                 <span class="cred-key"><span class="i-en">Education</span><span class="i-ja" lang="ja">学歴</span></span>
@@ -145,16 +189,12 @@
                 <span class="cred-val">JLPT N2</span>
               </div>
               <div class="cred-row">
-                <span class="cred-key"><span class="i-en">Profession</span><span class="i-ja" lang="ja">職業</span></span>
-                <span class="cred-val"><span class="i-en">Software Engineer, Castalia Co., Ltd.</span><span class="i-ja" lang="ja">ソフトウェアエンジニア（カスタリア株式会社）</span></span>
-              </div>
-              <div class="cred-row">
                 <span class="cred-key"><span class="i-en">Languages</span><span class="i-ja" lang="ja">言語</span></span>
                 <span class="cred-val"><span class="i-en">Japanese, English, Amharic</span><span class="i-ja" lang="ja">日本語・英語・アムハラ語</span></span>
               </div>
               <div class="cred-row">
-                <span class="cred-key"><span class="i-en">Leads</span><span class="i-ja" lang="ja">担当領域</span></span>
-                <span class="cred-val"><span class="i-en">Education &amp; Opportunity &middot; Strategic Partnerships &middot; Technology &amp; Operations &middot; Japan-side Development</span><span class="i-ja" lang="ja">教育と機会／戦略的パートナーシップ／テクノロジー・運営／日本側の事業開発</span></span>
+                <span class="cred-key"><span class="i-en">Areas of Leadership</span><span class="i-ja" lang="ja">担当領域</span></span>
+                <span class="cred-val"><span class="i-en">Japan&ndash;Ethiopia Market Development &middot; Business &amp; Strategic Partnerships &middot; Education &amp; Opportunity &middot; Technology &amp; Innovation &middot; Cross-Cultural Collaboration</span><span class="i-ja" lang="ja">日本・エチオピア市場開拓／事業・戦略的パートナーシップ／教育と機会／テクノロジーとイノベーション／異文化間協力</span></span>
               </div>
             </div>
           </div>
@@ -172,29 +212,29 @@
             <div class="founder-name"><span class="i-en">Tegegn Begashaw Abate</span><span class="i-ja" lang="ja">テゲン・ベガショー・アバテ</span></div>
             <div class="founder-role"><span class="i-en">Co-Founder &amp; Ethiopia Relations Director</span><span class="i-ja" lang="ja">共同創設者・エチオピア関係ディレクター</span></div>
             <div class="founder-bio">
-              <p class="i-en">Tegegn holds a Bachelor of Arts in Tourism Management and brings deep experience in tour planning, event organization, customer support, and cross-cultural communication. His background spans travel coordination, translation support, life consultation for newcomers, business development, and partnership building.</p>
-              <p class="i-ja" lang="ja">テゲンは観光マネジメントの学士号を持ち、ツアープランニング、イベント運営、カスタマーサポート、異文化コミュニケーションの豊富な経験を有しています。渡航コーディネート、翻訳サポート、新生活相談、ビジネス開発、パートナーシップ構築まで幅広い実績があります。</p>
-              <p class="i-en">His professional vision: to serve as a bridge between Japan and Ethiopia through cultural understanding, tourism support, business cooperation, and people-to-people connections.</p>
-              <p class="i-ja" lang="ja">「文化理解、観光サポート、ビジネス協力、人と人とのつながりを通じて日本とエチオピアの架け橋となる」——それが彼のビジョンです。</p>
-              <p class="i-en">At EthioMirai, Tegegn leads the Cultural Exchange &amp; Travel Support pillar and anchors the organization&rsquo;s presence and relationships on the Ethiopian side.</p>
-              <p class="i-ja" lang="ja">エチオ未来では「文化交流と渡航サポート」の柱を担当し、エチオピア側における組織の活動と関係構築を統括しています。</p>
+              <p class="i-en">Tegegn holds a Bachelor of Arts in Tourism Management and brings extensive experience in tourism, travel planning, event organization, customer support, and cross-cultural communication. His background spans travel coordination, business development, partnership building, and fostering meaningful connections between Ethiopia and Japan.</p>
+              <p class="i-ja" lang="ja">テゲンは観光マネジメントの学士号を持ち、観光、旅行企画、イベント運営、カスタマーサポート、異文化コミュニケーションにおいて豊富な経験を有しています。渡航コーディネート、ビジネス開発、パートナーシップ構築、そしてエチオピアと日本の間に意義あるつながりを育むことまで、幅広い実績があります。</p>
+              <p class="i-en">His professional vision is to serve as a bridge between Japan and Ethiopia through tourism, cultural exchange, business cooperation, and people-to-people connections.</p>
+              <p class="i-ja" lang="ja">彼のビジョンは、観光、文化交流、ビジネス協力、そして人と人とのつながりを通じて、日本とエチオピアの架け橋となることです。</p>
+              <p class="i-en">At EthioMirai, Tegegn leads the Tourism &amp; Cultural Exchange pillar and strengthens the organization&rsquo;s partnerships and relationships with Ethiopia, supporting tourism, business collaboration, delegation visits, and cross-cultural engagement.</p>
+              <p class="i-ja" lang="ja">エチオ未来では、テゲンが「観光と文化交流」の柱を担い、エチオピアとの提携・関係を強化し、観光、ビジネス連携、視察団訪問、異文化交流を支えています。</p>
             </div>
             <div class="cred-table">
               <div class="cred-row">
                 <span class="cred-key"><span class="i-en">Education</span><span class="i-ja" lang="ja">学歴</span></span>
-                <span class="cred-val"><span class="i-en">BA in Tourism Management</span><span class="i-ja" lang="ja">観光マネジメント学士</span></span>
+                <span class="cred-val"><span class="i-en">B.A. in Tourism Management</span><span class="i-ja" lang="ja">観光マネジメント学士（B.A.）</span></span>
               </div>
               <div class="cred-row">
                 <span class="cred-key"><span class="i-en">Expertise</span><span class="i-ja" lang="ja">専門分野</span></span>
-                <span class="cred-val"><span class="i-en">Tour planning, event organization, cross-cultural communication, business development</span><span class="i-ja" lang="ja">ツアープランニング／イベント運営／異文化コミュニケーション／ビジネス開発</span></span>
+                <span class="cred-val"><span class="i-en">Tourism &amp; Cultural Exchange, Ethiopia&ndash;Japan Relations, Travel Planning &amp; Coordination, Business Partnerships, Delegation Support, Event Organization, Cross-Cultural Communication</span><span class="i-ja" lang="ja">観光と文化交流／日本・エチオピア関係／旅行企画・コーディネート／ビジネスパートナーシップ／視察サポート／イベント運営／異文化コミュニケーション</span></span>
               </div>
               <div class="cred-row">
-                <span class="cred-key"><span class="i-en">Focus</span><span class="i-ja" lang="ja">注力領域</span></span>
-                <span class="cred-val"><span class="i-en">Ethiopia-side partnerships and community relations</span><span class="i-ja" lang="ja">エチオピア側のパートナーシップとコミュニティ関係</span></span>
+                <span class="cred-key"><span class="i-en">Key Focus Areas</span><span class="i-ja" lang="ja">主要注力領域</span></span>
+                <span class="cred-val"><span class="i-en">Tourism &amp; Cultural Exchange, Ethiopia Relations, Strategic Partnerships</span><span class="i-ja" lang="ja">観光と文化交流／エチオピア関係／戦略的パートナーシップ</span></span>
               </div>
               <div class="cred-row">
                 <span class="cred-key"><span class="i-en">Leads</span><span class="i-ja" lang="ja">担当領域</span></span>
-                <span class="cred-val"><span class="i-en">Cultural Exchange &amp; Travel Support &middot; Ethiopia-side Partnerships &middot; Community Relations &middot; Delegation &amp; Visitor Support</span><span class="i-ja" lang="ja">文化交流と渡航サポート／エチオピア側パートナーシップ／コミュニティ関係／視察・来訪者支援</span></span>
+                <span class="cred-val"><span class="i-en">Tourism &amp; Cultural Exchange &middot; Ethiopia Relations &middot; Business Partnerships &middot; Delegation &amp; Visitor Support</span><span class="i-ja" lang="ja">観光と文化交流／エチオピア関係／ビジネスパートナーシップ／視察・来訪者支援</span></span>
               </div>
             </div>
           </div>
@@ -216,7 +256,7 @@
         <div class="grid-2">
           <div class="pillar-card reveal">
             <h3><span class="i-en">Leadership on Both Sides</span><span class="i-ja" lang="ja">両国にリーダーシップ</span></h3>
-            <p class="pillar-desc i-en">A Japan Director based in Tokyo and an Ethiopia Relations Director anchoring our work on the Ethiopian side &mdash; so both ends of the bridge are held by someone who lives there.</p>
+            <p class="pillar-desc i-en">A Founder &amp; CEO based in Tokyo and an Ethiopia Relations Director anchoring our work on the Ethiopian side &mdash; so both ends of the bridge are held by someone who lives there.</p>
             <p class="pillar-desc i-ja" lang="ja">日本側には東京を拠点とするディレクター、エチオピア側には現地の活動を支えるディレクター。架け橋の両端を、そこに暮らす人間がしっかり支えています。</p>
           </div>
           <div class="pillar-card reveal">
@@ -267,13 +307,17 @@
             <a href="#" aria-label="LinkedIn">LI</a>
             <a href="#" aria-label="Instagram">IG</a>
           </div>
+          <p style="font-size:0.78rem;color:var(--gray-500);margin-top:14px;line-height:1.9;">
+            <span class="i-en">Yamato Building 405, 1-6-16 Kanda Izumicho,<br>Chiyoda-ku, Tokyo 101-0024, Japan</span>
+            <span class="i-ja" lang="ja">〒101-0024<br>東京都千代田区神田和泉町1番地6-16<br>ヤマトビル405</span><br>
+            <a href="tel:+818043611641" style="color:inherit;text-decoration:none;">+81 80-4361-1641</a>
+          </p>
         </div>
         <div class="footer-col">
           <h4><span class="i-en">Organization</span><span class="i-ja" lang="ja">組織</span></h4>
           <ul>
             <li><a href="about.html"><span class="i-en">About Us</span><span class="i-ja" lang="ja">私たちについて</span></a></li>
             <li><a href="services.html"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span></a></li>
-            <li><a href="maya-nihongo.html"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a></li>
             <li><a href="news.html"><span class="i-en">News</span><span class="i-ja" lang="ja">ニュース</span></a></li>
           </ul>
         </div>
@@ -281,7 +325,8 @@
           <h4><span class="i-en">Our Pillars</span><span class="i-ja" lang="ja">3つの柱</span></h4>
           <ul>
             <li><a href="services.html#education"><span class="i-en">Education &amp; Opportunity</span><span class="i-ja" lang="ja">教育と機会</span></a></li>
-            <li><a href="services.html#cultural-exchange"><span class="i-en">Cultural Exchange &amp; Travel Support</span><span class="i-ja" lang="ja">文化交流と渡航サポート</span></a></li>
+            <li class="footer-sub-item"><a href="maya-nihongo.html"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a></li>
+            <li><a href="services.html#cultural-exchange"><span class="i-en">Tourism &amp; Cultural Exchange</span><span class="i-ja" lang="ja">観光と文化交流</span></a></li>
             <li><a href="services.html#business"><span class="i-en">Business &amp; Partnership Support</span><span class="i-ja" lang="ja">ビジネスと提携支援</span></a></li>
           </ul>
         </div>

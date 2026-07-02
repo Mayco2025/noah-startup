@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>What We Do &mdash; EthioMirai</title>
-  <meta name="description" content="EthioMirai connects Japan and Ethiopia through three pillars: Education &amp; Opportunity, Cultural Exchange &amp; Travel Support, and Business &amp; Partnership Support.">
+  <meta name="description" content="EthioMirai connects Japan and Ethiopia through three pillars: Education &amp; Opportunity, Tourism &amp; Cultural Exchange, and Business &amp; Partnership Support.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
@@ -27,8 +27,15 @@
         <ul class="nav-menu">
           <li><a href="index.html" class="nav-link"><span class="i-en">Home</span><span class="i-ja" lang="ja">ホーム</span></a></li>
           <li><a href="about.html" class="nav-link"><span class="i-en">About</span><span class="i-ja" lang="ja">私たちについて</span></a></li>
-          <li><a href="services.html" class="nav-link"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span></a></li>
-          <li><a href="maya-nihongo.html" class="nav-link"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link nav-dropdown__toggle" type="button" aria-haspopup="true" aria-expanded="false"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span><span class="nav-dropdown__caret"></span></button>
+            <ul class="nav-dropdown__menu">
+              <li><a href="services.html#education" class="nav-dropdown__link"><span class="i-en">Education &amp; Opportunity</span><span class="i-ja" lang="ja">教育と機会</span></a></li>
+              <li><a href="maya-nihongo.html" class="nav-dropdown__link nav-dropdown__link--sub"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a></li>
+              <li><a href="services.html#cultural-exchange" class="nav-dropdown__link"><span class="i-en">Tourism &amp; Cultural Exchange</span><span class="i-ja" lang="ja">観光と文化交流</span></a></li>
+              <li><a href="services.html#business" class="nav-dropdown__link"><span class="i-en">Business &amp; Partnership Support</span><span class="i-ja" lang="ja">ビジネスと提携支援</span></a></li>
+            </ul>
+          </li>
           <li><a href="news.html" class="nav-link"><span class="i-en">News</span><span class="i-ja" lang="ja">ニュース</span></a></li>
           <li><a href="contact.html" class="nav-link nav-cta"><span class="i-en">Contact</span><span class="i-ja" lang="ja">お問い合わせ</span></a></li>
           <li class="lang-switch" aria-label="Language switch">
@@ -36,6 +43,10 @@
             <button class="lang-btn" data-setlang="ja" type="button" lang="ja">日本語</button>
           </li>
         </ul>
+        <div class="nav-lang-mobile" aria-label="Language switch">
+          <button class="lang-btn" data-setlang="en" type="button">EN</button>
+          <button class="lang-btn" data-setlang="ja" type="button" lang="ja">日本語</button>
+        </div>
         <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
           <span></span><span></span><span></span>
         </button>
@@ -46,7 +57,7 @@
         <a href="index.html" class="mobile-nav-link"><span class="i-en">Home</span><span class="i-ja" lang="ja">ホーム</span></a>
         <a href="about.html" class="mobile-nav-link"><span class="i-en">About</span><span class="i-ja" lang="ja">私たちについて</span></a>
         <a href="services.html" class="mobile-nav-link"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span></a>
-        <a href="maya-nihongo.html" class="mobile-nav-link"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a>
+        <a href="maya-nihongo.html" class="mobile-nav-link mobile-nav-link--sub"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a>
         <a href="news.html" class="mobile-nav-link"><span class="i-en">News</span><span class="i-ja" lang="ja">ニュース</span></a>
         <a href="contact.html" class="mobile-nav-link mobile-nav-link--cta"><span class="i-en">Contact Us</span><span class="i-ja" lang="ja">お問い合わせ</span></a>
         <div class="lang-switch">
@@ -152,15 +163,15 @@
       </div>
     </div>
 
-    <!-- PILLAR 2: CULTURAL EXCHANGE & TRAVEL SUPPORT -->
+    <!-- PILLAR 2: TOURISM & CULTURAL EXCHANGE -->
     <div id="cultural-exchange" class="service-block section--gray">
       <span id="tourism"></span>
       <div class="container">
         <div class="service-num reveal">02</div>
         <h2 class="reveal i-en">Tourism &amp; Cultural Exchange</h2>
         <h2 class="reveal i-ja" lang="ja">観光と文化交流</h2>
-        <p class="lead reveal i-en">Building stronger connections between Japan and Ethiopia through cultural experiences and people-to-people engagement.</p>
-        <p class="lead reveal i-ja" lang="ja">文化体験と人と人との交流を通じて、日本とエチオピアの結びつきを深めます。</p>
+        <p class="lead reveal i-en">Building stronger connections between Japan and Ethiopia through tourism, cultural experiences, and people-to-people engagement.</p>
+        <p class="lead reveal i-ja" lang="ja">観光や文化体験、人と人との交流を通じて、日本とエチオピアの結びつきをより強くします。</p>
 
         <div class="split-section mt-40 reverse">
           <div class="split-visual reveal-right">
@@ -178,33 +189,17 @@
               <div class="feature-item">
                 <div class="feature-dot"></div>
                 <div>
-                  <h4><span class="i-en">Cultural Exchange Programs</span><span class="i-ja" lang="ja">文化交流プログラム</span></h4>
-                  <p class="i-en">Ethiopia&ndash;Japan exchange activities, community networking, and cultural immersion experiences.</p>
-                  <p class="i-ja" lang="ja">エチオピアと日本の交流活動、コミュニティネットワーキング、文化体験プログラムを企画・運営します。</p>
+                  <h4><span class="i-en">Delegation &amp; Exchange Visits</span><span class="i-ja" lang="ja">視察・交流訪問</span></h4>
+                  <p class="i-en">Organizing and coordinating business and cultural delegation visits that strengthen partnerships, encourage knowledge sharing, promote meaningful exchange, and build lasting connections between the two countries.</p>
+                  <p class="i-ja" lang="ja">パートナーシップを強化し、知識共有を促し、有意義な交流を推進し、両国間の永続的なつながりを築く、ビジネス・文化視察団の企画・調整を行います。</p>
                 </div>
               </div>
               <div class="feature-item">
                 <div class="feature-dot"></div>
                 <div>
-                  <h4><span class="i-en">Events &amp; Seminars</span><span class="i-ja" lang="ja">イベント・セミナー</span></h4>
-                  <p class="i-en">Cultural events, seminars and presentations, and community building in both countries.</p>
-                  <p class="i-ja" lang="ja">文化イベント、セミナー・講演、両国でのコミュニティづくりを行います。</p>
-                </div>
-              </div>
-              <div class="feature-item">
-                <div class="feature-dot"></div>
-                <div>
-                  <h4><span class="i-en">Delegation Visits &amp; Travel Support</span><span class="i-ja" lang="ja">視察・渡航サポート</span></h4>
-                  <p class="i-en">Coordination and accompaniment for delegations, with practical travel support and trusted local guidance.</p>
-                  <p class="i-ja" lang="ja">視察団のコーディネートと同行、実用的な渡航サポート、信頼できる現地ガイダンスを提供します。</p>
-                </div>
-              </div>
-              <div class="feature-item">
-                <div class="feature-dot"></div>
-                <div>
-                  <h4><span class="i-en">Media &amp; Storytelling Projects</span><span class="i-ja" lang="ja">メディア・ストーリーテリング</span></h4>
-                  <p class="i-en">Stories that build understanding between the two countries &mdash; articles, conversations, and community voices.</p>
-                  <p class="i-ja" lang="ja">記事、対談、コミュニティの声——両国の相互理解を育むストーリーを発信します。</p>
+                  <h4><span class="i-en">Travel Experiences &amp; Visitor Support</span><span class="i-ja" lang="ja">旅行体験・来訪者サポート</span></h4>
+                  <p class="i-en">Providing travel consultation, visitor support, local guidance, and authentic cultural experiences that help individuals and groups explore Ethiopia and Japan with confidence and meaningful connections.</p>
+                  <p class="i-ja" lang="ja">個人や団体が自信を持ってエチオピアと日本を巡り、意義あるつながりを持てるよう、渡航相談、来訪者サポート、現地ガイダンス、本物の文化体験を提供します。</p>
                 </div>
               </div>
             </div>
@@ -343,11 +338,15 @@
               </div>
               <div class="wws-item">
                 <span class="wws-item__icon">🚀</span>
-                <div><p class="wws-item__text i-en">Professionals building Japan-connected careers</p><p class="wws-item__text i-ja" lang="ja">日本とつながるキャリアを築く社会人</p></div>
+                <div><p class="wws-item__text i-en">Professionals seeking careers with Japanese companies or Japan-related work opportunities</p><p class="wws-item__text i-ja" lang="ja">日本企業での就労や、日本関連の仕事の機会を求める社会人</p></div>
               </div>
               <div class="wws-item">
                 <span class="wws-item__icon">🌐</span>
                 <div><p class="wws-item__text i-en">Organizations seeking Japanese partnerships</p><p class="wws-item__text i-ja" lang="ja">日本とのパートナーシップを求める組織</p></div>
+              </div>
+              <div class="wws-item">
+                <span class="wws-item__icon">🗼</span>
+                <div><p class="wws-item__text i-en">Visitors &amp; delegations discovering Japan</p><p class="wws-item__text i-ja" lang="ja">日本を訪れる旅行者・視察団</p></div>
               </div>
             </div>
             </div>
@@ -443,13 +442,17 @@
             <a href="#" aria-label="LinkedIn">LI</a>
             <a href="#" aria-label="Instagram">IG</a>
           </div>
+          <p style="font-size:0.78rem;color:var(--gray-500);margin-top:14px;line-height:1.9;">
+            <span class="i-en">Yamato Building 405, 1-6-16 Kanda Izumicho,<br>Chiyoda-ku, Tokyo 101-0024, Japan</span>
+            <span class="i-ja" lang="ja">〒101-0024<br>東京都千代田区神田和泉町1番地6-16<br>ヤマトビル405</span><br>
+            <a href="tel:+818043611641" style="color:inherit;text-decoration:none;">+81 80-4361-1641</a>
+          </p>
         </div>
         <div class="footer-col">
           <h4><span class="i-en">Organization</span><span class="i-ja" lang="ja">組織</span></h4>
           <ul>
             <li><a href="about.html"><span class="i-en">About Us</span><span class="i-ja" lang="ja">私たちについて</span></a></li>
             <li><a href="services.html"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span></a></li>
-            <li><a href="maya-nihongo.html"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a></li>
             <li><a href="news.html"><span class="i-en">News</span><span class="i-ja" lang="ja">ニュース</span></a></li>
           </ul>
         </div>
@@ -457,6 +460,7 @@
           <h4><span class="i-en">Our Pillars</span><span class="i-ja" lang="ja">3つの柱</span></h4>
           <ul>
             <li><a href="services.html#education"><span class="i-en">Education &amp; Opportunity</span><span class="i-ja" lang="ja">教育と機会</span></a></li>
+            <li class="footer-sub-item"><a href="maya-nihongo.html"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a></li>
             <li><a href="services.html#cultural-exchange"><span class="i-en">Tourism &amp; Cultural Exchange</span><span class="i-ja" lang="ja">観光と文化交流</span></a></li>
             <li><a href="services.html#business"><span class="i-en">Business &amp; Partnership Support</span><span class="i-ja" lang="ja">ビジネスと提携支援</span></a></li>
           </ul>

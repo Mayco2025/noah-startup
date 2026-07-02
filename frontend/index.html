@@ -13,6 +13,30 @@
 </head>
 <body class="page-body" data-title-en="EthioMirai — A Japan–Ethiopia Bridge Organization" data-title-ja="エチオ未来（EthioMirai）— 日本とエチオピアの架け橋">
 
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar__inner">
+        <div class="top-bar__item top-bar__addr">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="i-en">Yamato Building 405, 1-6-16 Kanda Izumicho, Chiyoda-ku, Tokyo 101-0024</span>
+          <span class="i-ja" lang="ja">〒101-0024 東京都千代田区神田和泉町1番地6-16 ヤマトビル405</span>
+        </div>
+        <div class="top-bar__right">
+          <div class="top-bar__item">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.06 6.06l.91-.91a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+818043611641">+81 80-4361-1641</a>
+          </div>
+          <span class="top-bar__sep">|</span>
+          <div class="top-bar__item">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@ethiomirai.com">info@ethiomirai.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- NAVIGATION -->
   <header class="site-header" id="site-header">
     <div class="container">
@@ -27,8 +51,15 @@
         <ul class="nav-menu">
           <li><a href="index.html" class="nav-link"><span class="i-en">Home</span><span class="i-ja" lang="ja">ホーム</span></a></li>
           <li><a href="about.html" class="nav-link"><span class="i-en">About</span><span class="i-ja" lang="ja">私たちについて</span></a></li>
-          <li><a href="services.html" class="nav-link"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span></a></li>
-          <li><a href="maya-nihongo.html" class="nav-link"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link nav-dropdown__toggle" type="button" aria-haspopup="true" aria-expanded="false"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span><span class="nav-dropdown__caret"></span></button>
+            <ul class="nav-dropdown__menu">
+              <li><a href="services.html#education" class="nav-dropdown__link"><span class="i-en">Education &amp; Opportunity</span><span class="i-ja" lang="ja">教育と機会</span></a></li>
+              <li><a href="maya-nihongo.html" class="nav-dropdown__link nav-dropdown__link--sub"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a></li>
+              <li><a href="services.html#cultural-exchange" class="nav-dropdown__link"><span class="i-en">Tourism &amp; Cultural Exchange</span><span class="i-ja" lang="ja">観光と文化交流</span></a></li>
+              <li><a href="services.html#business" class="nav-dropdown__link"><span class="i-en">Business &amp; Partnership Support</span><span class="i-ja" lang="ja">ビジネスと提携支援</span></a></li>
+            </ul>
+          </li>
           <li><a href="news.html" class="nav-link"><span class="i-en">News</span><span class="i-ja" lang="ja">ニュース</span></a></li>
           <li><a href="contact.html" class="nav-link nav-cta"><span class="i-en">Contact</span><span class="i-ja" lang="ja">お問い合わせ</span></a></li>
           <li class="lang-switch" aria-label="Language switch">
@@ -36,6 +67,10 @@
             <button class="lang-btn" data-setlang="ja" type="button" lang="ja">日本語</button>
           </li>
         </ul>
+        <div class="nav-lang-mobile" aria-label="Language switch">
+          <button class="lang-btn" data-setlang="en" type="button">EN</button>
+          <button class="lang-btn" data-setlang="ja" type="button" lang="ja">日本語</button>
+        </div>
         <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
           <span></span><span></span><span></span>
         </button>
@@ -46,7 +81,7 @@
         <a href="index.html" class="mobile-nav-link"><span class="i-en">Home</span><span class="i-ja" lang="ja">ホーム</span></a>
         <a href="about.html" class="mobile-nav-link"><span class="i-en">About</span><span class="i-ja" lang="ja">私たちについて</span></a>
         <a href="services.html" class="mobile-nav-link"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span></a>
-        <a href="maya-nihongo.html" class="mobile-nav-link"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a>
+        <a href="maya-nihongo.html" class="mobile-nav-link mobile-nav-link--sub"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a>
         <a href="news.html" class="mobile-nav-link"><span class="i-en">News</span><span class="i-ja" lang="ja">ニュース</span></a>
         <a href="contact.html" class="mobile-nav-link mobile-nav-link--cta"><span class="i-en">Contact Us</span><span class="i-ja" lang="ja">お問い合わせ</span></a>
         <div class="lang-switch">
@@ -79,8 +114,8 @@
             </div>
             <h1 class="i-en">Building Bridges Between<br><em>Ethiopia and Japan</em></h1>
             <h1 class="i-ja" lang="ja">エチオピアと日本を<br><em>つなぐ架け橋</em></h1>
-            <p class="hp-sub i-en">Connecting people, opportunities, and partnerships through education, cultural exchange, and business collaboration.</p>
-            <p class="hp-sub i-ja" lang="ja">教育・文化交流・ビジネス協力を通じて、人々・機会・パートナーシップをつなぎます。</p>
+            <p class="hp-sub i-en">EthioMirai connects Ethiopia and Japan through Education, Business, and Tourism &amp; Cultural Exchange.</p>
+            <p class="hp-sub i-ja" lang="ja">エチオ未来は、教育・ビジネス・観光と文化交流を通じてエチオピアと日本をつなぐ架け橋組織です。</p>
             <ul class="hp-pillars">
               <li class="hp-pillar hp-pillar--green">
                 <span class="hp-pillar-icon">
@@ -141,6 +176,30 @@
     </div>
 
 
+    <!-- ABOUT TEASER -->
+    <section class="section section--gray section--kanji" data-kanji="未来">
+      <div class="container">
+        <div class="about-stacked">
+          <div class="about-stacked-img reveal">
+            <img src="who-we-are.png" alt="EthioMirai — Bridging Ethiopia and Japan">
+          </div>
+          <div class="about-stacked-content reveal">
+            <span class="section-label"><span class="i-en">About EthioMirai</span><span class="i-ja" lang="ja">エチオ未来について</span></span>
+            <h2 class="i-en">A Bridge Built on Real Experience</h2>
+            <h2 class="i-ja" lang="ja">実体験から生まれた架け橋</h2>
+            <p class="i-en">EthioMirai (エチオ未来) is led by Noah Eskindir, Founder &amp; CEO, and Tegegn Begashaw Abate, Co-Founder &amp; Ethiopia Relations Director &mdash; a team with leadership rooted on both sides of the bridge. "Mirai" means future, and that is exactly what we build.</p>
+            <p class="i-ja" lang="ja">エチオ未来は、創設者・CEOのノア・エスキンディルと、共同創設者・エチオピア関係ディレクターのテゲン・ベガショー・アバテが率いる組織です。架け橋の両側に根ざしたリーダーシップが私たちの強みです。「未来」という名前の通り、私たちが築くのは両国の未来そのものです。</p>
+            <p class="i-en">The organization is built on direct knowledge of both Ethiopian and Japanese environments &mdash; not theory, but lived experience. We work in three languages &mdash; Japanese, Amharic, and English &mdash; with personal networks in both countries.</p>
+            <p class="i-ja" lang="ja">私たちの活動は、理論ではなく、日本とエチオピア双方での生活・仕事の実体験に基づいています。日本語・アムハラ語・英語の3言語で活動し、両国に独自のネットワークを持っています。</p>
+            <div class="btn-actions">
+              <a href="about.html#leadership" class="btn btn-primary"><span class="i-en">Meet the Leadership</span><span class="i-ja" lang="ja">リーダーシップ紹介</span></a>
+              <a href="services.html" class="btn btn-secondary"><span class="i-en">Our Three Pillars</span><span class="i-ja" lang="ja">3つの柱</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- THREE PILLARS -->
     <section class="section" id="services">
       <div class="container">
@@ -191,25 +250,23 @@
       </div>
     </section>
 
-    <!-- ABOUT TEASER -->
-    <section class="section section--gray section--kanji" data-kanji="未来">
+    <!-- PROGRAMS: MAYA NIHONGO -->
+    <section class="section" id="programs">
       <div class="container">
         <div class="about-stacked">
-          <div class="about-stacked-img reveal">
-            <img src="who-we-are.png" alt="EthioMirai — Bridging Ethiopia and Japan">
-          </div>
           <div class="about-stacked-content reveal">
-            <span class="section-label"><span class="i-en">About EthioMirai</span><span class="i-ja" lang="ja">エチオ未来について</span></span>
-            <h2 class="i-en">A Bridge Built on Real Experience</h2>
-            <h2 class="i-ja" lang="ja">実体験から生まれた架け橋</h2>
-            <p class="i-en">EthioMirai (エチオ未来) is led by Noah Eskindir, Founder &amp; Japan Director, and Tegegn Begashaw Abate, Co-Founder &amp; Ethiopia Relations Director &mdash; a team with leadership rooted on both sides of the bridge. "Mirai" means future, and that is exactly what we build.</p>
-            <p class="i-ja" lang="ja">エチオ未来は、創設者・日本ディレクターのノア・エスキンディルと、共同創設者・エチオピア関係ディレクターのテゲン・ベガショー・アバテが率いる組織です。架け橋の両側に根ざしたリーダーシップが私たちの強みです。「未来」という名前の通り、私たちが築くのは両国の未来そのものです。</p>
-            <p class="i-en">The organization is built on direct knowledge of both Ethiopian and Japanese environments &mdash; not theory, but lived experience. We work in three languages &mdash; Japanese, Amharic, and English &mdash; with personal networks in both countries.</p>
-            <p class="i-ja" lang="ja">私たちの活動は、理論ではなく、日本とエチオピア双方での生活・仕事の実体験に基づいています。日本語・アムハラ語・英語の3言語で活動し、両国に独自のネットワークを持っています。</p>
+            <span class="section-label"><span class="i-en">Featured Program</span><span class="i-ja" lang="ja">主要プログラム</span></span>
+            <h2 class="i-en">Maya Nihongo &mdash; Japanese Language &amp; Student Support</h2>
+            <h2 class="i-ja" lang="ja">マヤ日本語 &mdash; 日本語・留学生支援プログラム</h2>
+            <p class="i-en">Maya Nihongo was founded by Noah Eskindir and now operates as EthioMirai&rsquo;s Japanese Language &amp; Student Support Program. From foundational Japanese classes and JLPT preparation to full study-in-Japan guidance, Maya Nihongo has helped Ethiopian students build real careers and lives in Japan.</p>
+            <p class="i-ja" lang="ja">マヤ日本語はノア・エスキンディルが創設し、現在はエチオ未来の日本語・留学生支援プログラムとして運営されています。基礎的な日本語クラス、JLPT対策、日本留学の完全サポートを通じて、多くのエチオピア人学生が日本でのキャリアと生活を実現しています。</p>
             <div class="btn-actions">
-              <a href="about.html#leadership" class="btn btn-primary"><span class="i-en">Meet the Leadership</span><span class="i-ja" lang="ja">リーダーシップ紹介</span></a>
-              <a href="services.html" class="btn btn-secondary"><span class="i-en">Our Three Pillars</span><span class="i-ja" lang="ja">3つの柱</span></a>
+              <a href="maya-nihongo.html" class="btn btn-primary"><span class="i-en">Explore Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語を見る</span></a>
+              <a href="contact.html" class="btn btn-secondary"><span class="i-en">Join the Program</span><span class="i-ja" lang="ja">プログラムに参加</span></a>
             </div>
+          </div>
+          <div class="about-stacked-img reveal">
+            <img src="maya-nihongo-hero.png" alt="Maya Nihongo — EthioMirai's Japanese Language Program" onerror="this.closest('.about-stacked-img').style.display='none'">
           </div>
         </div>
       </div>
@@ -265,13 +322,17 @@
             <a href="#" aria-label="LinkedIn">LI</a>
             <a href="#" aria-label="Instagram">IG</a>
           </div>
+          <p style="font-size:0.78rem;color:var(--gray-500);margin-top:14px;line-height:1.9;">
+            <span class="i-en">Yamato Building 405, 1-6-16 Kanda Izumicho,<br>Chiyoda-ku, Tokyo 101-0024, Japan</span>
+            <span class="i-ja" lang="ja">〒101-0024<br>東京都千代田区神田和泉町1番地6-16<br>ヤマトビル405</span><br>
+            <a href="tel:+818043611641" style="color:inherit;text-decoration:none;">+81 80-4361-1641</a>
+          </p>
         </div>
         <div class="footer-col">
           <h4><span class="i-en">Organization</span><span class="i-ja" lang="ja">組織</span></h4>
           <ul>
             <li><a href="about.html"><span class="i-en">About Us</span><span class="i-ja" lang="ja">私たちについて</span></a></li>
             <li><a href="services.html"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span></a></li>
-            <li><a href="maya-nihongo.html"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a></li>
             <li><a href="news.html"><span class="i-en">News</span><span class="i-ja" lang="ja">ニュース</span></a></li>
           </ul>
         </div>
@@ -279,6 +340,7 @@
           <h4><span class="i-en">Our Pillars</span><span class="i-ja" lang="ja">3つの柱</span></h4>
           <ul>
             <li><a href="services.html#education"><span class="i-en">Education &amp; Opportunity</span><span class="i-ja" lang="ja">教育と機会</span></a></li>
+            <li class="footer-sub-item"><a href="maya-nihongo.html"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a></li>
             <li><a href="services.html#cultural-exchange"><span class="i-en">Tourism &amp; Cultural Exchange</span><span class="i-ja" lang="ja">観光と文化交流</span></a></li>
             <li><a href="services.html#business"><span class="i-en">Business &amp; Partnership Support</span><span class="i-ja" lang="ja">ビジネスと提携支援</span></a></li>
           </ul>

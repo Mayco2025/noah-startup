@@ -27,8 +27,15 @@
         <ul class="nav-menu">
           <li><a href="index.html" class="nav-link"><span class="i-en">Home</span><span class="i-ja" lang="ja">ホーム</span></a></li>
           <li><a href="about.html" class="nav-link"><span class="i-en">About</span><span class="i-ja" lang="ja">私たちについて</span></a></li>
-          <li><a href="services.html" class="nav-link"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span></a></li>
-          <li><a href="maya-nihongo.html" class="nav-link"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link nav-dropdown__toggle" type="button" aria-haspopup="true" aria-expanded="false"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span><span class="nav-dropdown__caret"></span></button>
+            <ul class="nav-dropdown__menu">
+              <li><a href="services.html#education" class="nav-dropdown__link"><span class="i-en">Education &amp; Opportunity</span><span class="i-ja" lang="ja">教育と機会</span></a></li>
+              <li><a href="maya-nihongo.html" class="nav-dropdown__link nav-dropdown__link--sub"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a></li>
+              <li><a href="services.html#cultural-exchange" class="nav-dropdown__link"><span class="i-en">Tourism &amp; Cultural Exchange</span><span class="i-ja" lang="ja">観光と文化交流</span></a></li>
+              <li><a href="services.html#business" class="nav-dropdown__link"><span class="i-en">Business &amp; Partnership Support</span><span class="i-ja" lang="ja">ビジネスと提携支援</span></a></li>
+            </ul>
+          </li>
           <li><a href="news.html" class="nav-link"><span class="i-en">News</span><span class="i-ja" lang="ja">ニュース</span></a></li>
           <li><a href="contact.html" class="nav-link nav-cta"><span class="i-en">Contact</span><span class="i-ja" lang="ja">お問い合わせ</span></a></li>
           <li class="lang-switch" aria-label="Language switch">
@@ -36,6 +43,10 @@
             <button class="lang-btn" data-setlang="ja" type="button" lang="ja">日本語</button>
           </li>
         </ul>
+        <div class="nav-lang-mobile" aria-label="Language switch">
+          <button class="lang-btn" data-setlang="en" type="button">EN</button>
+          <button class="lang-btn" data-setlang="ja" type="button" lang="ja">日本語</button>
+        </div>
         <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
           <span></span><span></span><span></span>
         </button>
@@ -46,7 +57,7 @@
         <a href="index.html" class="mobile-nav-link"><span class="i-en">Home</span><span class="i-ja" lang="ja">ホーム</span></a>
         <a href="about.html" class="mobile-nav-link"><span class="i-en">About</span><span class="i-ja" lang="ja">私たちについて</span></a>
         <a href="services.html" class="mobile-nav-link"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span></a>
-        <a href="maya-nihongo.html" class="mobile-nav-link"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a>
+        <a href="maya-nihongo.html" class="mobile-nav-link mobile-nav-link--sub"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a>
         <a href="news.html" class="mobile-nav-link"><span class="i-en">News</span><span class="i-ja" lang="ja">ニュース</span></a>
         <a href="contact.html" class="mobile-nav-link mobile-nav-link--cta"><span class="i-en">Contact Us</span><span class="i-ja" lang="ja">お問い合わせ</span></a>
         <div class="lang-switch">
@@ -87,10 +98,10 @@
           <h2 class="i-ja" lang="ja">マヤ日本語が生まれた理由</h2>
           <p class="i-en">For many Ethiopians, Japan represents opportunity &mdash; education, career growth, and a global future. Maya Nihongo was created to help make that journey possible.</p>
           <p class="i-ja" lang="ja">多くのエチオピア人にとって、日本は機会の象徴です。教育、キャリアアップ、そしてグローバルな未来。マヤ日本語は、その旅を実現するために生まれました。</p>
-          <p class="i-en">Founded by Noah Eskindir, who personally completed the path from Ethiopia to Japan, Maya Nihongo combines real-world experience with structured Japanese language education and student support.</p>
-          <p class="i-ja" lang="ja">創設者ノア・エスキンディルは、エチオピアから日本へのルートを自ら歩んだ人物です。マヤ日本語は、その実体験と体系的な日本語教育・学生サポートを組み合わせたプログラムです。</p>
-          <p class="i-en">As EthioMirai&rsquo;s Japanese Language &amp; Student Support Program, Maya Nihongo offers Japanese language classes, JLPT preparation, study-in-Japan guidance, language school partnerships, visa support, and a growing community of learners preparing for success in Japan.</p>
-          <p class="i-ja" lang="ja">エチオ未来の日本語・留学生支援プログラムとして、マヤ日本語は日本語クラス、JLPT対策、日本留学ガイダンス、語学学校との連携、ビザサポート、そして日本での成功を目指す学習者コミュニティを提供しています。</p>
+          <p class="i-en">Maya Nihongo was founded by Noah Eskindir and now operates as EthioMirai&rsquo;s Japanese Language &amp; Student Support Program. Noah personally completed the path from Ethiopia to Japan, and built Maya Nihongo from that lived experience &mdash; combining real-world knowledge with structured language education and student support.</p>
+          <p class="i-ja" lang="ja">マヤ日本語はノア・エスキンディルが創設し、現在はエチオ未来の日本語・留学生支援プログラムとして運営されています。ノア自身がエチオピアから日本へのルートを歩んだ実体験をもとに、体系的な語学教育と学生サポートを組み合わせたプログラムを構築しました。</p>
+          <p class="i-en">Maya Nihongo offers Japanese language classes, JLPT preparation, study-in-Japan guidance, language school partnerships, visa support, and a growing community of learners preparing for success in Japan.</p>
+          <p class="i-ja" lang="ja">マヤ日本語は日本語クラス、JLPT対策、日本留学ガイダンス、語学学校との連携、ビザサポート、そして日本での成功を目指す学習者コミュニティを提供しています。</p>
         </div>
         <div class="reveal" style="margin-top:2.5rem;">
           <img src="maya-nihongo-hero.png" alt="Maya Nihongo program overview" loading="lazy" style="width:100%; height:auto; display:block; border-radius:14px; box-shadow:0 4px 24px rgba(0,0,0,0.08);">
@@ -627,41 +638,72 @@
     -->
 
 
-    <!-- GALLERY -->
-    <section class="section section--gray">
+
+    <!-- STUDENT LIST -->
+    <section class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-label"><span class="i-en">Gallery</span><span class="i-ja" lang="ja">ギャラリー</span></span>
-          <h2 class="i-en">From the Community</h2>
-          <h2 class="i-ja" lang="ja">コミュニティの様子</h2>
-          <p class="lead i-en">Photos from Maya Nihongo classes, events, and student milestones.</p>
-          <p class="lead i-ja" lang="ja">マヤ日本語のクラス、イベント、学生の節目の写真です。</p>
+          <span class="section-label"><span class="i-en">Our Students</span><span class="i-ja" lang="ja">学生一覧</span></span>
+          <h2 class="i-en">Some of the Students From Each Batch</h2>
+          <h2 class="i-ja" lang="ja">各バッチの学生の一部をご紹介</h2>
+          <p class="lead i-en">Some of the Ethiopian students learning Japanese with Maya Nihongo, from each batch.</p>
+          <p class="lead i-ja" lang="ja">各バッチから、マヤ日本語で日本語を学ぶ学生の一部をご紹介します。</p>
         </div>
 
-        <div class="gallery-grid reveal">
-          <div class="photo-placeholder photo-placeholder--card">
-            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            PHOTO NEEDED — Online Class
+        <div class="batch-group reveal">
+          <div class="batch-badge batch-badge--1"><span class="i-en">Batch 1</span><span class="i-ja" lang="ja">バッチ1</span></div>
+          <div class="student-grid">
+            <div class="student-card"><img src="img/students/tadesse-leta-batch1.jpg" alt="Tadesse Leta — Batch 1 Student, Maya Nihongo" loading="lazy"></div>
+            <div class="student-card"><img src="img/students/betelehem-tadele-batch1.jpg" alt="Betelehem Tadele — Batch 1 Student, Maya Nihongo" loading="lazy"></div>
+            <div class="student-more">
+              <div class="student-more__badge">+</div>
+              <div class="student-more__label i-en">More Batch 1 students</div>
+              <div class="student-more__label i-ja" lang="ja">他のバッチ1の学生</div>
+            </div>
           </div>
-          <div class="photo-placeholder photo-placeholder--card">
-            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            PHOTO NEEDED — Students
+        </div>
+
+        <div class="batch-group reveal">
+          <div class="batch-badge batch-badge--2"><span class="i-en">Batch 2</span><span class="i-ja" lang="ja">バッチ2</span></div>
+          <div class="student-grid">
+            <div class="student-card"><img src="img/students/aklisiya-abirham-batch2.jpg" alt="Aklisiya Abirham — Batch 2 Student, Maya Nihongo" loading="lazy"></div>
+            <div class="student-card"><img src="img/students/eden-eskindir-batch2.jpg" alt="Eden Eskindir — Batch 2 Student, Maya Nihongo" loading="lazy"></div>
+            <div class="student-card"><img src="img/students/tsion-eshetu-batch2.jpg" alt="Tsion Eshetu — Batch 2 Student, Maya Nihongo" loading="lazy"></div>
+            <div class="student-card"><img src="img/students/habtamu-batch2.jpg" alt="Habtamu — Batch 2 Student, Maya Nihongo" loading="lazy"></div>
+            <div class="student-card"><img src="img/students/habtamu-2-batch2.jpg" alt="Habtamu — Batch 2 Student, Maya Nihongo" loading="lazy"></div>
+            <div class="student-more">
+              <div class="student-more__badge">+</div>
+              <div class="student-more__label i-en">More Batch 2 students</div>
+              <div class="student-more__label i-ja" lang="ja">他のバッチ2の学生</div>
+            </div>
           </div>
-          <div class="photo-placeholder photo-placeholder--card">
-            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            PHOTO NEEDED — Learning Materials
+        </div>
+
+        <div class="batch-group reveal">
+          <div class="batch-badge batch-badge--3"><span class="i-en">Batch 3</span><span class="i-ja" lang="ja">バッチ3</span></div>
+          <div class="student-grid">
+            <div class="student-card"><img src="img/students/weynshet-girma-batch3.jpg" alt="Weynshet Girma — Batch 3 Student, Maya Nihongo" loading="lazy"></div>
+            <div class="student-card"><img src="img/students/ezedin-batch3.jpg" alt="Ezedin — Batch 3 Student, Maya Nihongo" loading="lazy"></div>
+            <div class="student-more">
+              <div class="student-more__badge">+</div>
+              <div class="student-more__label i-en">More Batch 3 students</div>
+              <div class="student-more__label i-ja" lang="ja">他のバッチ3の学生</div>
+            </div>
           </div>
-          <div class="photo-placeholder photo-placeholder--card">
-            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            PHOTO NEEDED — Certificates
-          </div>
-          <div class="photo-placeholder photo-placeholder--card">
-            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            PHOTO NEEDED — Student Milestone
-          </div>
-          <div class="photo-placeholder photo-placeholder--card">
-            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            PHOTO NEEDED — Community Session
+        </div>
+
+        <div class="batch-group reveal">
+          <div class="batch-badge batch-badge--4"><span class="i-en">Batch 4</span><span class="i-ja" lang="ja">バッチ4</span></div>
+          <div class="student-grid">
+            <div class="student-card"><img src="img/students/fitsum-lukas-batch4-card.jpg" alt="Fitsum Lukas — Batch 4 Student, Maya Nihongo" loading="lazy"></div>
+            <div class="student-card"><img src="img/students/betelhem-megersa-batch4.jpg" alt="Betelhem Megersa — Batch 4 Student, Maya Nihongo" loading="lazy"></div>
+            <div class="student-card"><img src="img/students/liyu-tilahun-batch4.jpg" alt="Liyu Tilahun — Batch 4 Student, Maya Nihongo" loading="lazy"></div>
+            <div class="student-card"><img src="img/students/nitsuhfikir-abebe-batch4.jpg" alt="Nitsuhfikir Abebe — Batch 4 Student, Maya Nihongo" loading="lazy"></div>
+            <div class="student-more">
+              <div class="student-more__badge">+</div>
+              <div class="student-more__label i-en">More Batch 4 students</div>
+              <div class="student-more__label i-ja" lang="ja">他のバッチ4の学生</div>
+            </div>
           </div>
         </div>
       </div>
@@ -695,6 +737,11 @@
             <a href="#" aria-label="LinkedIn">LI</a>
             <a href="#" aria-label="Instagram">IG</a>
           </div>
+          <p style="font-size:0.78rem;color:var(--gray-500);margin-top:14px;line-height:1.9;">
+            <span class="i-en">Yamato Building 405, 1-6-16 Kanda Izumicho,<br>Chiyoda-ku, Tokyo 101-0024, Japan</span>
+            <span class="i-ja" lang="ja">〒101-0024<br>東京都千代田区神田和泉町1番地6-16<br>ヤマトビル405</span><br>
+            <a href="tel:+818043611641" style="color:inherit;text-decoration:none;">+81 80-4361-1641</a>
+          </p>
         </div>
         <div class="footer-col">
           <h4><span class="i-en">Organization</span><span class="i-ja" lang="ja">組織</span></h4>
@@ -710,7 +757,6 @@
           <ul>
             <li><a href="maya-nihongo.html#story"><span class="i-en">Our Story</span><span class="i-ja" lang="ja">ストーリー</span></a></li>
             <li><a href="maya-nihongo.html#journey"><span class="i-en">Student Journey</span><span class="i-ja" lang="ja">学生の歩み</span></a></li>
-            <li><a href="maya-nihongo.html#future"><span class="i-en">Future Vision</span><span class="i-ja" lang="ja">将来のビジョン</span></a></li>
           </ul>
         </div>
         <div class="footer-col">
