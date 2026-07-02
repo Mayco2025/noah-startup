@@ -116,7 +116,7 @@
       link.classList.add('active');
     }
   });
-  if (currentFile === 'services.html' || currentFile === 'maya-nihongo.html') {
+  if (currentFile === 'services.html') {
     document.querySelectorAll('.nav-dropdown__toggle').forEach(t => t.classList.add('active'));
   }
 
