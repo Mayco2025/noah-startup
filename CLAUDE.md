@@ -14,8 +14,8 @@ EthioMirai (エチオ未来, "Mirai" = Future) is a Japan–Ethiopia **bridge or
 Sub-brand name is **"Maya Nihongo"** (do NOT rename). Position as: "Maya Nihongo – EthioMirai's Japanese Language & Student Support Program" under the Education pillar. Page: `frontend/maya-nihongo.html` (old `ethiomirai-nihongo.html` is a redirect stub).
 
 ## Leadership (always show BOTH — never single-founder)
-- **Noah Eskindir** — Founder & CEO. Ethiopian, based in Japan 7+ years. JLPT N2; Waseda Bunri College grad (Embedded Software Engineering); founder of EthioMirai LLC and Maya Nihongo; project experience with JICA, AOTS, UNESCO/IICBA; educator/content creator (TikTok 96k+, Facebook 9k+, YouTube 4k+). Leads: Japan–Ethiopia market development, strategic partnerships, Education & Opportunity, tech/innovation, Japan side.
-- **Tegegn Begashaw Abate** — Co-Founder & Ethiopia Relations Director. BA Tourism Management; tour planning, events, cross-cultural communication, business development. Leads: Tourism & Cultural Exchange, Ethiopia-side partnerships, community relations, delegation/visitor support.
+- **Wubetu Noah Eskindir** — Co-Founder & CEO (business card: EN "Co-Founder & CEO", JA 共同創業者｜代表取締役（CEO）; katakana ウベツ・ノハ・イスキンダー). Ethiopian, based in Japan 7+ years. JLPT N2; Waseda Bunri College grad (Embedded Software Engineering); founder of EthioMirai LLC and Maya Nihongo; project experience with JICA, AOTS, UNESCO/IICBA; educator/content creator (TikTok 96k+, Facebook 9k+, YouTube 4k+). Leads: Japan–Ethiopia market development, strategic partnerships, Education & Opportunity, tech/innovation, Japan side.
+- **Tegegn Begashaw Abate** — Co-Founder | Tourism & Partnership Lead (business card; JA 共同創業者｜観光・提携担当; katakana テゲイン・ベガシャウ・アバテ). BA Tourism Management; tour planning, events, cross-cultural communication, business development. Leads: Tourism & Cultural Exchange, Ethiopia-side partnerships, community relations, delegation/visitor support.
 
 ## Differentiators
 Leadership on both sides; real experience living/working in both cultures; trilingual (Japanese, Amharic, English); personal networks in both countries.
