@@ -1118,13 +1118,14 @@ p:last-child { margin-bottom: 0; }
 }
 .mn-hero h1 {
   color: var(--navy);
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
   margin-bottom: 12px;
   letter-spacing: -.01em;
+  white-space: nowrap;
 }
 .mn-hero__tagline {
   display: inline-block;
-  font-size: 0.42em;
+  font-size: 0.46em;
   font-weight: 500;
   color: rgba(0,0,0,0.55);
   letter-spacing: 0;
@@ -3805,7 +3806,8 @@ html, body { overflow-x: clip; }
   .mn-hero__inner { grid-template-columns: 1fr; }
   .mn-hero__text { padding-bottom: 28px; text-align: center; }
   .mn-hero .mn-sub { margin: 0 auto 24px; }
-  .mn-hero h1 { font-size: clamp(1.8rem, 8vw, 2.4rem); }
+  .mn-hero h1 { font-size: clamp(1.8rem, 8vw, 2.4rem); white-space: normal; }
+  .mn-hero__tagline { display: block; margin-top: 6px; }
   .mn-hero__img { display: none; }
   .mn-tag { font-size: 0.65rem; }
 
