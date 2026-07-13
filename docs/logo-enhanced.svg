@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <!-- White background -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000015"/>
+    </filter>
+    <filter id="textglow-green">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Subtle radial glow behind icon -->
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF8E1" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Gold gradient for sun -->
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#F59B00"/>
+    </linearGradient>
+
+    <!-- Thin decorative line gradient -->
+    <linearGradient id="lineGradLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a6b1a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#1a6b1a" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="lineGradRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a2e6b" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#1a2e6b" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Subtle bg pattern -->
+    <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="1" fill="#e8eaf0" opacity="0.6"/>
+    </pattern>
+
+    <!-- Clip for icon circle -->
+    <clipPath id="iconClip">
+      <circle cx="600" cy="155" r="90"/>
+    </clipPath>
+  </defs>
+
+  <!-- White background -->
+  <rect width="1200" height="500" fill="#ffffff"/>
+
+  <!-- Subtle dot-grid texture -->
+  <rect width="1200" height="500" fill="url(#dots)"/>
+
+  <!-- Very subtle color wash left/right -->
+  <rect x="0" y="0" width="400" height="500" fill="#f0faf0" opacity="0.25"/>
+  <rect x="800" y="0" width="400" height="500" fill="#f0f2fa" opacity="0.25"/>
+
+  <!-- Glow behind center icon -->
+  <ellipse cx="600" cy="160" rx="130" ry="120" fill="url(#centerGlow)" opacity="0.9"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  SUN ICON                                   -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Sun rays (spikes) -->
+  <g transform="translate(600, 100)" fill="url(#sunGrad)">
+    <!-- top spike -->
+    <polygon points="0,-58 -5,-42 5,-42"/>
+    <!-- top-right -->
+    <polygon points="30,-50 20,-36 28,-28" transform="rotate(25,0,0)"/>
+    <polygon points="50,-30 36,-22 32,-34" transform="rotate(0,0,0)"/>
+    <!-- right -->
+    <polygon points="58,0 42,-5 42,5"/>
+    <!-- bottom-right -->
+    <polygon points="50,30 36,22 32,34"/>
+    <!-- top-left -->
+    <polygon points="-30,-50 -20,-36 -28,-28" transform="rotate(-25,0,0)"/>
+    <polygon points="-50,-30 -36,-22 -32,-34"/>
+    <!-- left -->
+    <polygon points="-58,0 -42,-5 -42,5"/>
+    <!-- bottom-left -->
+    <polygon points="-50,30 -36,22 -32,34"/>
+  </g>
+
+  <!-- Sun arc (semicircle) -->
+  <path d="M 510,155 A 90,90 0 0 1 690,155" fill="none" stroke="url(#sunGrad)" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  THREE FIGURES                              -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- LEFT figure (green) -->
+  <g transform="translate(561, 130)">
+    <!-- head -->
+    <circle cx="0" cy="-28" r="9" fill="#1a7a1a"/>
+    <!-- body arms -->
+    <path d="M-18,-10 Q0,-25 18,-10" fill="none" stroke="#1a7a1a" stroke-width="5.5" stroke-linecap="round"/>
+    <!-- torso -->
+    <line x1="0" y1="-19" x2="0" y2="8" stroke="#1a7a1a" stroke-width="5.5" stroke-linecap="round"/>
+    <!-- legs -->
+    <path d="M0,8 L-10,28 M0,8 L10,28" stroke="#1a7a1a" stroke-width="5.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- CENTER figure (red, slightly larger + raised) -->
+  <g transform="translate(600, 118)">
+    <!-- head -->
+    <circle cx="0" cy="-30" r="11" fill="#cc1a1a"/>
+    <!-- arms raised high -->
+    <path d="M-22,-8 Q0,-30 22,-8" fill="none" stroke="#cc1a1a" stroke-width="6.5" stroke-linecap="round"/>
+    <!-- torso -->
+    <line x1="0" y1="-19" x2="0" y2="10" stroke="#cc1a1a" stroke-width="6.5" stroke-linecap="round"/>
+    <!-- legs -->
+    <path d="M0,10 L-12,33 M0,10 L12,33" stroke="#cc1a1a" stroke-width="6.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- RIGHT figure (blue) -->
+  <g transform="translate(639, 130)">
+    <!-- head -->
+    <circle cx="0" cy="-28" r="9" fill="#1a2e8c"/>
+    <!-- arms -->
+    <path d="M-18,-10 Q0,-25 18,-10" fill="none" stroke="#1a2e8c" stroke-width="5.5" stroke-linecap="round"/>
+    <!-- torso -->
+    <line x1="0" y1="-19" x2="0" y2="8" stroke="#1a2e8c" stroke-width="5.5" stroke-linecap="round"/>
+    <!-- legs -->
+    <path d="M0,8 L-10,28 M0,8 L10,28" stroke="#1a2e8c" stroke-width="5.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ground arc under figures -->
+  <path d="M 548,195 A 52,18 0 0 0 652,195" fill="#1a2e8c" opacity="0.85"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  ETHIO  (left, dark green)                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <text
+    x="90" y="225"
+    font-family="'Arial Black', 'Impact', sans-serif"
+    font-size="148"
+    font-weight="900"
+    fill="#1a6b1a"
+    letter-spacing="4"
+    filter="url(#shadow)"
+  >ETHIO</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  MIRAI  (right, dark navy)                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <text
+    x="658" y="225"
+    font-family="'Arial Black', 'Impact', sans-serif"
+    font-size="148"
+    font-weight="900"
+    fill="#1a2e6b"
+    letter-spacing="4"
+    filter="url(#shadow)"
+  >MIRAI</text>
+
+  <!-- Red dot on I in MIRAI (accent) -->
+  <circle cx="1117" cy="104" r="12" fill="#cc1a1a"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  エチオ 未来  with decorative lines          -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Left line (green fade in) -->
+  <line x1="90" y1="280" x2="430" y2="280" stroke="url(#lineGradLeft)" stroke-width="1.5"/>
+  <!-- Right line (navy fade out) -->
+  <line x1="770" y1="280" x2="1110" y2="280" stroke="url(#lineGradRight)" stroke-width="1.5"/>
+
+  <text
+    x="600" y="278"
+    font-family="'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', serif"
+    font-size="46"
+    fill="#1a2e6b"
+    text-anchor="middle"
+    letter-spacing="12"
+  >エチオ 未来</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  Japanese tagline                           -->
+  <!-- ═══════════════════════════════════════════ -->
+  <text
+    x="600" y="340"
+    font-family="'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif"
+    font-size="22"
+    fill="#333333"
+    text-anchor="middle"
+    letter-spacing="2"
+  >人と人を<tspan fill="#1a6b1a" font-weight="bold">つなぎ</tspan>、可能性を<tspan fill="#1a2e6b" font-weight="bold">ひらき</tspan>、共に<tspan fill="#cc1a1a" font-weight="bold">未来</tspan>を創る。</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  English tagline (tri-color)                -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Subtle separator dots between phrases -->
+  <text
+    x="600" y="392"
+    font-family="'Arial', sans-serif"
+    font-size="17"
+    font-weight="700"
+    text-anchor="middle"
+    letter-spacing="3"
+  ><tspan fill="#1a6b1a">CONNECTING PEOPLE</tspan><tspan fill="#999999">  ·  </tspan><tspan fill="#1a2e6b">OPENING POSSIBILITIES</tspan><tspan fill="#999999">  ·  </tspan><tspan fill="#cc1a1a">CREATING TOMORROWS TOGETHER</tspan></text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  Bottom accent bar (tri-color thin line)    -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="90" y="420" width="340" height="3" rx="1.5" fill="#1a6b1a" opacity="0.7"/>
+  <rect x="430" y="420" width="340" height="3" rx="1.5" fill="#1a2e6b" opacity="0.7"/>
+  <rect x="770" y="420" width="340" height="3" rx="1.5" fill="#cc1a1a" opacity="0.7"/>
+
+</svg>

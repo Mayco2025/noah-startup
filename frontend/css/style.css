@@ -1122,6 +1122,14 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 12px;
   letter-spacing: -.01em;
 }
+.mn-hero__tagline {
+  display: inline-block;
+  font-size: 0.42em;
+  font-weight: 500;
+  color: rgba(0,0,0,0.55);
+  letter-spacing: 0;
+  white-space: nowrap;
+}
 .mn-hero .mn-sub {
   color: rgba(0,0,0,0.58);
   font-size: 1rem;
