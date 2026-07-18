@@ -5,6 +5,17 @@
 (function () {
   'use strict';
 
+  /* ── Site config ─────────────────────────────────────────────
+     Single source of truth for the public contact email.
+     HTML marks email links with data-contact-email (static value
+     kept as a no-JS fallback); JS syncs them to this constant. */
+  const CONTACT_EMAIL = 'info@ethiomirai.com';
+
+  document.querySelectorAll('[data-contact-email]').forEach(el => {
+    if (el.tagName === 'A') el.setAttribute('href', 'mailto:' + CONTACT_EMAIL);
+    el.textContent = CONTACT_EMAIL;
+  });
+
   /* ── EN / JA language toggle ─────────────────────────────── */
   const docEl = document.documentElement;
 
@@ -175,8 +186,8 @@
       .catch(() => {
         if (btn) {
           btn.textContent = isJa()
-            ? '送信できませんでした。info@ethiomirai.com までご連絡ください。'
-            : 'Could not send — please email info@ethiomirai.com';
+            ? '送信できませんでした。' + CONTACT_EMAIL + ' までご連絡ください。'
+            : 'Could not send — please email ' + CONTACT_EMAIL;
           setTimeout(() => { btn.innerHTML = original; btn.disabled = false; }, 6000);
         }
       });
