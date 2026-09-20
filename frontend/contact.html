@@ -121,18 +121,61 @@
                         <input type="email" id="g-email" name="email" data-ph-en="your@email.com" data-ph-ja="your@email.com" placeholder="your@email.com" required>
                       </div>
                     </div>
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label for="g-phone"><span class="i-en">Phone / WhatsApp / Telegram</span><span class="i-ja" lang="ja">電話 / WhatsApp / Telegram</span></label>
+                        <input type="text" id="g-phone" name="phone" data-ph-en="+251… (optional)" data-ph-ja="+251…（任意）" placeholder="+251… (optional)">
+                      </div>
+                      <div class="form-group">
+                        <label for="g-city"><span class="i-en">Where are you now?</span><span class="i-ja" lang="ja">現在の居住地</span></label>
+                        <select id="g-city" name="location">
+                          <option value="" data-en="Select (optional)" data-ja="選択してください（任意）">Select (optional)</option>
+                          <option data-en="Ethiopia — Addis Ababa" data-ja="エチオピア（アディスアベバ）">Ethiopia &mdash; Addis Ababa</option>
+                          <option data-en="Ethiopia — other region" data-ja="エチオピア（その他地域）">Ethiopia &mdash; other region</option>
+                          <option data-en="Already in Japan" data-ja="日本在住">Already in Japan</option>
+                          <option data-en="Other country" data-ja="その他の国">Other country</option>
+                        </select>
+                      </div>
+                    </div>
                     <div class="form-group">
-                      <label for="g-subject"><span class="i-en">Subject</span><span class="i-ja" lang="ja">件名</span> <span style="color:#C0392B">*</span></label>
+                      <label for="g-subject"><span class="i-en">What do you need?</span><span class="i-ja" lang="ja">お問い合わせ内容</span> <span style="color:#C0392B">*</span></label>
                       <select id="g-subject" name="subject" required>
-                        <option value="" data-en="Select a subject" data-ja="件名を選択してください">Select a subject</option>
-                        <option data-en="Education &amp; Opportunity" data-ja="教育と機会">Education &amp; Opportunity</option>
-                        <option data-en="Maya Nihongo" data-ja="マヤ日本語">Maya Nihongo</option>
-                        <option data-en="Tourism &amp; Cultural Exchange" data-ja="観光と文化交流">Tourism &amp; Cultural Exchange</option>
-                        <option data-en="Business &amp; Partnership Support" data-ja="ビジネスと提携支援">Business &amp; Partnership Support</option>
-                        <option data-en="Media &amp; Press" data-ja="メディア・取材">Media &amp; Press</option>
-                        <option data-en="General Question" data-ja="一般的なご質問">General Question</option>
-                        <option data-en="Other" data-ja="その他">Other</option>
+                        <option value="" data-en="Select what you need" data-ja="内容を選択してください">Select what you need</option>
+                        <option value="Japan-Ready Program — study in Japan" data-en="Japan-Ready Program — I want to study in Japan" data-ja="ジャパン・レディ・プログラム — 日本留学希望">Japan-Ready Program &mdash; I want to study in Japan</option>
+                        <option value="Japanese classes — normal study" data-en="Japanese classes — I want to learn Japanese (not going to Japan yet)" data-ja="日本語クラス — まず日本語を学びたい">Japanese classes &mdash; I want to learn Japanese (not going to Japan yet)</option>
+                        <option value="JLPT preparation" data-en="JLPT preparation" data-ja="JLPT対策">JLPT preparation</option>
+                        <option value="Private coaching" data-en="Private coaching (one-on-one lessons)" data-ja="プライベートコーチング（個人レッスン）">Private coaching (one-on-one lessons)</option>
+                        <option value="Already in Japan — support" data-en="I am already in Japan — language / life support" data-ja="日本在住 — 語学・生活サポート">I am already in Japan &mdash; language / life support</option>
+                        <option value="Tourism &amp; travel" data-en="Tourism &amp; visiting Japan" data-ja="観光・訪日">Tourism &amp; visiting Japan</option>
+                        <option value="Business &amp; partnership" data-en="Business &amp; partnership" data-ja="ビジネス・提携">Business &amp; partnership</option>
+                        <option value="Media &amp; press" data-en="Media &amp; press" data-ja="メディア・取材">Media &amp; press</option>
+                        <option value="Other" data-en="Other" data-ja="その他">Other</option>
                       </select>
+                    </div>
+                    <div id="g-student-extra" hidden>
+                      <div class="form-row">
+                        <div class="form-group">
+                          <label for="g-education"><span class="i-en">Your education level</span><span class="i-ja" lang="ja">最終学歴</span> <span style="color:#C0392B">*</span></label>
+                          <select id="g-education" name="education_level">
+                            <option value="" data-en="Select your education level" data-ja="学歴を選択してください">Select your education level</option>
+                            <option data-en="High school (12 years) completed" data-ja="高校卒業（12年）">High school (12 years) completed</option>
+                            <option data-en="High school not yet completed" data-ja="高校在学中・未修了">High school not yet completed</option>
+                            <option data-en="Diploma / TVET" data-ja="ディプロマ / 職業訓練">Diploma / TVET</option>
+                            <option data-en="Bachelor's degree" data-ja="学士号">Bachelor's degree</option>
+                            <option data-en="Master's degree or higher" data-ja="修士号以上">Master's degree or higher</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="g-jlevel"><span class="i-en">Your Japanese level</span><span class="i-ja" lang="ja">日本語レベル</span> <span style="color:#C0392B">*</span></label>
+                          <select id="g-jlevel" name="japanese_level">
+                            <option value="" data-en="Select your Japanese level" data-ja="レベルを選択してください">Select your Japanese level</option>
+                            <option data-en="No Japanese yet" data-ja="未学習">No Japanese yet</option>
+                            <option data-en="Beginner (some hiragana/katakana)" data-ja="初級（ひらがな・カタカナ程度）">Beginner (some hiragana/katakana)</option>
+                            <option data-en="JLPT N5 level" data-ja="JLPT N5レベル">JLPT N5 level</option>
+                            <option data-en="JLPT N4 level or above" data-ja="JLPT N4レベル以上">JLPT N4 level or above</option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
                     <div class="form-group">
                       <label for="g-message"><span class="i-en">Message</span><span class="i-ja" lang="ja">メッセージ</span> <span style="color:#C0392B">*</span></label>
@@ -396,5 +439,18 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    (function(){
+      var subj = document.getElementById('g-subject');
+      var extra = document.getElementById('g-student-extra');
+      if (!subj || !extra) return;
+      var studySubjects = ['Japan-Ready Program — study in Japan','Japanese classes — normal study','JLPT preparation','Private coaching'];
+      subj.addEventListener('change', function(){
+        var show = studySubjects.indexOf(subj.value) !== -1;
+        extra.hidden = !show;
+        extra.querySelectorAll('select').forEach(function(el){ el.required = show; });
+      });
+    })();
+  </script>
 </body>
 </html>
