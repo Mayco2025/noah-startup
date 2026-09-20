@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" class="lang-en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:image" content="https://ethiomirai.com/ethiomirai-og-website-white.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <title>Japan Ready Program &mdash; EthioMirai</title>
+  <meta name="description" content="The Japan Ready Program by EthioMirai and Maya Nihongo: a certified 150-hour Japanese course, school matching with partner schools in Japan, and honest step-by-step guidance from registration to your first day of school.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>(function(){try{if(localStorage.getItem('em-lang')==='ja'){var d=document.documentElement;d.classList.remove('lang-en');d.classList.add('lang-ja');d.lang='ja';}}catch(e){}})();</script>
+</head>
+<body class="page-body" data-title-en="Japan Ready Program — EthioMirai" data-title-ja="ジャパン・レディ・プログラム — エチオ未来">
+
+  <!-- NAVIGATION -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">
+          <img src="ethiomirai-horizontal-fullcolor.svg" alt="EthioMirai — Ethiopia · Japan" class="nav-logo-img">
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link"><span class="i-en">Home</span><span class="i-ja" lang="ja">ホーム</span></a></li>
+          <li><a href="about.html" class="nav-link"><span class="i-en">About</span><span class="i-ja" lang="ja">私たちについて</span></a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link nav-dropdown__toggle" type="button" aria-haspopup="true" aria-expanded="false"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span><span class="nav-dropdown__caret"></span></button>
+            <ul class="nav-dropdown__menu">
+              <li><a href="services.html#education" class="nav-dropdown__link"><span class="i-en">Education &amp; Opportunity</span><span class="i-ja" lang="ja">教育と機会</span></a></li>
+              <li><a href="services.html#cultural-exchange" class="nav-dropdown__link"><span class="i-en">Tourism &amp; Cultural Exchange</span><span class="i-ja" lang="ja">観光と文化交流</span></a></li>
+              <li><a href="services.html#business" class="nav-dropdown__link"><span class="i-en">Business &amp; Partnership Support</span><span class="i-ja" lang="ja">ビジネスと提携支援</span></a></li>
+            </ul>
+          </li>
+          <li><a href="maya-nihongo.html" class="nav-link"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a></li>
+          <li><a href="japan-ready.html" class="nav-link"><span class="i-en">Japan Ready</span><span class="i-ja" lang="ja">ジャパン・レディ</span></a></li>
+          <li><a href="news.html" class="nav-link"><span class="i-en">News</span><span class="i-ja" lang="ja">ニュース</span></a></li>
+          <li><a href="contact.html" class="nav-link nav-cta"><span class="i-en">Contact</span><span class="i-ja" lang="ja">お問い合わせ</span></a></li>
+          <li class="lang-switch" aria-label="Language switch">
+            <button class="lang-btn" data-setlang="en" type="button">EN</button>
+            <button class="lang-btn" data-setlang="ja" type="button" lang="ja">日本語</button>
+          </li>
+        </ul>
+        <div class="nav-lang-mobile" aria-label="Language switch">
+          <button class="lang-btn" data-setlang="en" type="button">EN</button>
+          <button class="lang-btn" data-setlang="ja" type="button" lang="ja">日本語</button>
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
+      <div class="container">
+        <a href="index.html" class="mobile-nav-link"><span class="i-en">Home</span><span class="i-ja" lang="ja">ホーム</span></a>
+        <a href="about.html" class="mobile-nav-link"><span class="i-en">About</span><span class="i-ja" lang="ja">私たちについて</span></a>
+        <a href="services.html" class="mobile-nav-link"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span></a>
+        <a href="maya-nihongo.html" class="mobile-nav-link"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a>
+        <a href="japan-ready.html" class="mobile-nav-link"><span class="i-en">Japan Ready Program</span><span class="i-ja" lang="ja">ジャパン・レディ・プログラム</span></a>
+        <a href="news.html" class="mobile-nav-link"><span class="i-en">News</span><span class="i-ja" lang="ja">ニュース</span></a>
+        <a href="contact.html" class="mobile-nav-link mobile-nav-link--cta"><span class="i-en">Contact Us</span><span class="i-ja" lang="ja">お問い合わせ</span></a>
+        <div class="lang-switch">
+          <button class="lang-btn" data-setlang="en" type="button">EN</button>
+          <button class="lang-btn" data-setlang="ja" type="button" lang="ja">日本語</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html"><span class="i-en">Home</span><span class="i-ja" lang="ja">ホーム</span></a>
+          <span class="breadcrumb-sep">/</span>
+          <a href="maya-nihongo.html"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a>
+          <span class="breadcrumb-sep">/</span>
+          <span><span class="i-en">Japan Ready Program</span><span class="i-ja" lang="ja">ジャパン・レディ・プログラム</span></span>
+        </nav>
+        <h1 class="i-en">Japan Ready Program</h1>
+        <h1 class="i-ja" lang="ja">ジャパン・レディ・プログラム</h1>
+        <p class="lead i-en">Your pathway to study, language, and opportunity in Japan &mdash; one clear route from your first class in Addis Ababa to your first day of school in Japan.</p>
+        <p class="lead i-ja" lang="ja">日本での学び・語学・機会への道のり。アディスアベバでの最初の授業から日本での初登校まで、一つの明確なルートでご案内します。</p>
+      </div>
+    </section>
+
+    <!-- HERO IMAGE -->
+    <section class="section" style="padding-top:40px; padding-bottom:0;">
+      <div class="container">
+        <div class="photo-frame reveal" style="border-radius:14px; overflow:hidden;">
+          <img src="img/japan-ready/hero.jpg" alt="Japan Ready Program &mdash; EthioMirai student orientation" style="width:100%; display:block;">
+        </div>
+      </div>
+    </section>
+
+    <!-- PATHWAY -->
+    <section class="section" id="pathway">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label"><span class="i-en">The Pathway</span><span class="i-ja" lang="ja">道のり</span></span>
+          <h2 class="i-en">From registration to Japan &mdash; five steps</h2>
+          <h2 class="i-ja" lang="ja">登録から日本まで — 5つのステップ</h2>
+        </div>
+        <div style="max-width:820px; margin:0 auto;">
+          <div class="journey-step reveal">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4><span class="i-en">Register</span><span class="i-ja" lang="ja">登録</span></h4>
+              <p class="i-en">Sign the enrollment agreement, join your cohort's group, and get your course account. Seats are capped per cohort so every student gets real attention.</p>
+              <p class="i-ja" lang="ja">受講契約に署名し、コホートのグループに参加、コースアカウントを取得します。一人ひとりに目が届くよう、各期の定員は少人数に限定しています。</p>
+            </div>
+          </div>
+          <div class="journey-step reveal">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4><span class="i-en">Study &mdash; the certified 150-hour course</span><span class="i-ja" lang="ja">学習 — 認定150時間コース</span></h4>
+              <p class="i-en">About three months of structured study: hiragana and katakana, kanji method, and full JLPT N5 grammar and vocabulary &mdash; backed by a live support class every week.</p>
+              <p class="i-ja" lang="ja">約3か月間の体系的な学習。ひらがな・カタカナ、漢字の学習法、JLPT N5の文法・語彙を網羅し、毎週のライブサポートクラスが学習を支えます。</p>
+            </div>
+          </div>
+          <div class="journey-step reveal">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4><span class="i-en">Certificate</span><span class="i-ja" lang="ja">修了証</span></h4>
+              <p class="i-en">Pass the final exam and receive your official 150-hour certificate from a licensed Japanese language school in Tokyo &mdash; the document that opens the school application.</p>
+              <p class="i-ja" lang="ja">最終試験に合格すると、東京の認可日本語学校が発行する公式の150時間修了証を取得。これが学校出願への扉を開く書類です。</p>
+            </div>
+          </div>
+          <div class="journey-step reveal">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <h4><span class="i-en">School application</span><span class="i-ja" lang="ja">学校出願</span></h4>
+              <p class="i-en">We match you to the partner school that fits your age, documents, and goal &mdash; then prepare your file and submit it as the school's agent, following up in Japanese.</p>
+              <p class="i-ja" lang="ja">年齢・書類・目標に合ったパートナー校をマッチングし、書類を整えて学校の代理店として出願。日本語でフォローアップします。</p>
+            </div>
+          </div>
+          <div class="journey-step reveal">
+            <div class="step-num">5</div>
+            <div class="step-content">
+              <h4><span class="i-en">COE and visa</span><span class="i-ja" lang="ja">在留資格認定とビザ</span></h4>
+              <p class="i-en">The school files your Certificate of Eligibility with Japanese Immigration, and the embassy decides your visa. We prepare everything we can &mdash; but this decision belongs to the school and Immigration.</p>
+              <p class="i-ja" lang="ja">学校が入国管理局へ在留資格認定証明書（COE）を申請し、ビザは大使館が判断します。私たちは万全の準備をしますが、最終判断は学校と入管にあります。</p>
+            </div>
+          </div>
+          <p class="mt-40 i-en" style="background:var(--gray-100); border-left:3px solid var(--brand-gold); padding:16px 20px; border-radius:6px; font-size:0.95rem;">
+            <strong>Honesty first:</strong> steps 1&ndash;3 are in our control, and we stand behind them. Steps 4&ndash;5 we work hard on &mdash; but the school and Japanese Immigration make the final decision. Anyone who guarantees you a visa is not being honest with you.
+          </p>
+          <p class="mt-40 i-ja" lang="ja" style="background:var(--gray-100); border-left:3px solid var(--brand-gold); padding:16px 20px; border-radius:6px; font-size:0.95rem;">
+            <strong>正直さを第一に：</strong>ステップ1〜3は私たちの責任範囲であり、確実に提供します。ステップ4〜5は全力で支援しますが、最終決定は学校と日本の入国管理局が行います。ビザを「保証する」と言う業者は誠実ではありません。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE COURSE -->
+    <section class="section section--gray" id="course">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label"><span class="i-en">The Course</span><span class="i-ja" lang="ja">コース内容</span></span>
+          <h2 class="i-en">A certificate that is earned, not bought</h2>
+          <h2 class="i-ja" lang="ja">修了証は「買う」ものではなく「努力で得る」もの</h2>
+          <p class="lead i-en">The 150-hour course runs on a licensed platform, on demand, on any device. Your study logs are verified before the certificate is issued.</p>
+          <p class="lead i-ja" lang="ja">150時間コースは認可プラットフォーム上で、いつでもどのデバイスでも学習可能。修了証の発行前に学習記録が確認されます。</p>
+        </div>
+        <div class="grid-3 mt-40">
+          <div class="pillar-card reveal">
+            <h3><span class="i-en">150 hours of lessons</span><span class="i-ja" lang="ja">150時間のレッスン</span></h3>
+            <p class="i-en">Beginner units, a kanji reading and writing method, and complete JLPT N5 grammar and vocabulary &mdash; about two hours of self-study a day over roughly twelve weeks.</p>
+            <p class="i-ja" lang="ja">初級ユニット、漢字の読み書きメソッド、JLPT N5の文法・語彙を完全網羅。約12週間、1日約2時間の自習ペースです。</p>
+          </div>
+          <div class="pillar-card reveal">
+            <h3><span class="i-en">Weekly live class</span><span class="i-ja" lang="ja">毎週のライブクラス</span></h3>
+            <p class="i-en">A live group session every week in a small class: grammar explained clearly, speaking and pronunciation practice, homework checks, and a pace check so you stay on schedule.</p>
+            <p class="i-ja" lang="ja">毎週の少人数ライブセッション。文法の丁寧な解説、会話・発音練習、宿題チェック、進捗確認で学習ペースを守ります。</p>
+          </div>
+          <div class="pillar-card reveal">
+            <h3><span class="i-en">Verified completion</span><span class="i-ja" lang="ja">修了の検証</span></h3>
+            <p class="i-en">Watch every required video, complete every unit test, study the minimum period, and pass the final exam. Only then is the official certificate issued.</p>
+            <p class="i-ja" lang="ja">全ての必須動画の視聴、全ユニットテストの提出、最低学習期間、最終試験の合格。すべて満たして初めて公式修了証が発行されます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AFTER THE CERTIFICATE -->
+    <section class="section" id="after-certificate">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label"><span class="i-en">After the Certificate</span><span class="i-ja" lang="ja">修了証の後</span></span>
+          <h2 class="i-en">The certificate opens five doors &mdash; we walk you through every one</h2>
+          <h2 class="i-ja" lang="ja">修了証が開く5つの扉 — すべてを伴走します</h2>
+        </div>
+        <div class="hww-track">
+          <div class="hww-step">
+            <div class="hww-step__bubble"><div class="hww-step__num">01</div></div>
+            <div class="hww-step__body">
+              <h4><span class="i-en">School matching</span><span class="i-ja" lang="ja">学校マッチング</span></h4>
+              <p class="i-en">We choose the partner school that fits your age, budget, documents, and goal &mdash; you are never choosing blind.</p>
+              <p class="i-ja" lang="ja">年齢・予算・書類・目標に合うパートナー校を選定。手探りの学校選びにはなりません。</p>
+            </div>
+          </div>
+          <div class="hww-step">
+            <div class="hww-step__bubble"><div class="hww-step__num">02</div></div>
+            <div class="hww-step__body">
+              <h4><span class="i-en">Document preparation</span><span class="i-ja" lang="ja">書類準備</span></h4>
+              <p class="i-en">Education records, sponsor documents, and translations &mdash; all pre-checked in Addis Ababa before anything goes to Japan.</p>
+              <p class="i-ja" lang="ja">学歴証明・スポンサー書類・翻訳を、日本へ送る前にアディスアベバで事前確認します。</p>
+            </div>
+          </div>
+          <div class="hww-step">
+            <div class="hww-step__bubble"><div class="hww-step__num">03</div></div>
+            <div class="hww-step__body">
+              <h4><span class="i-en">Application submission</span><span class="i-ja" lang="ja">出願手続き</span></h4>
+              <p class="i-en">We submit your file to the school as their agent and follow up in Japanese on your behalf.</p>
+              <p class="i-ja" lang="ja">学校の代理店として出願書類を提出し、日本語でフォローアップします。</p>
+            </div>
+          </div>
+          <div class="hww-step">
+            <div class="hww-step__bubble"><div class="hww-step__num">04</div></div>
+            <div class="hww-step__body">
+              <h4><span class="i-en">Interview coaching</span><span class="i-ja" lang="ja">面接対策</span></h4>
+              <p class="i-en">Practice for the school interview and entrance assessment, so you walk in prepared, not surprised.</p>
+              <p class="i-ja" lang="ja">学校面接と入学テストの練習で、万全の状態で本番に臨めます。</p>
+            </div>
+          </div>
+          <div class="hww-step">
+            <div class="hww-step__bubble"><div class="hww-step__num">05</div></div>
+            <div class="hww-step__body">
+              <h4><span class="i-en">Arrival support</span><span class="i-ja" lang="ja">渡航後サポート</span></h4>
+              <p class="i-en">An optional arrival package: airport pickup, housing search, SIM and bank setup, city hall registration &mdash; from landing to your first day of school.</p>
+              <p class="i-ja" lang="ja">オプションの到着パッケージ。空港送迎、住居探し、SIM・銀行口座、区役所手続きまで、着陸から初登校日まで支援します。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNER SCHOOLS -->
+    <section class="section section--gray" id="partner-schools">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label"><span class="i-en">Partner Schools</span><span class="i-ja" lang="ja">パートナー校</span></span>
+          <h2 class="i-en">Our vetted partner schools in Japan</h2>
+          <h2 class="i-ja" lang="ja">日本国内の厳選されたパートナー校</h2>
+          <p class="lead i-en">Schools in Tokyo and Okinawa &mdash; each confirmed to accept Ethiopian students. We match you to the school that fits your profile, and tuition is always paid by you directly to the school, never through us.</p>
+          <p class="lead i-ja" lang="ja">東京と沖縄のパートナー校。いずれもエチオピア人学生の受け入れを確認済みです。あなたに合った学校をマッチングし、学費は必ず学校へ直接支払います。</p>
+        </div>
+        <div class="photo-frame reveal" style="border-radius:14px; overflow:hidden; margin-bottom:28px;">
+          <img src="img/japan-ready/schools-trio.jpg" alt="EthioMirai partner Japanese language schools" style="width:100%; display:block;" loading="lazy">
+        </div>
+        <div class="grid-3 mt-40">
+          <div class="pillar-card reveal" style="padding:0; overflow:hidden;">
+            <img src="img/japan-ready/school-a.jpg" alt="Partner School A &mdash; central Tokyo" style="width:100%; display:block;" loading="lazy">
+            <div style="padding:22px 24px;">
+              <h3><span class="i-en">School A &mdash; Central Tokyo</span><span class="i-ja" lang="ja">A校 — 東京都心</span></h3>
+              <p class="i-en">April and October intakes. Students arrange housing with our help, and our Tokyo team is nearby for support.</p>
+              <p class="i-ja" lang="ja">4月・10月入学。住居探しは私たちがサポート。東京チームが近くで支えます。</p>
+            </div>
+          </div>
+          <div class="pillar-card reveal" style="padding:0; overflow:hidden;">
+            <img src="img/japan-ready/school-b.jpg" alt="Partner School B &mdash; east Tokyo" style="width:100%; display:block;" loading="lazy">
+            <div style="padding:22px 24px;">
+              <h3><span class="i-en">School B &mdash; East Tokyo</span><span class="i-ja" lang="ja">B校 — 東京東部</span></h3>
+              <p class="i-en">A small campus with close attention, share houses and dorms nearby, and experience with students from document-heavy countries.</p>
+              <p class="i-ja" lang="ja">少人数で手厚い小規模キャンパス。近隣にシェアハウス・寮あり。書類審査が厳しい国の学生の受け入れ経験も豊富です。</p>
+            </div>
+          </div>
+          <div class="pillar-card reveal" style="padding:0; overflow:hidden;">
+            <img src="img/japan-ready/school-c.jpg" alt="Partner School C &mdash; Okinawa" style="width:100%; display:block;" loading="lazy">
+            <div style="padding:22px 24px;">
+              <h3><span class="i-en">School C &mdash; Okinawa</span><span class="i-ja" lang="ja">C校 — 沖縄</span></h3>
+              <p class="i-en">Dorms next to campus, four intakes a year, health check-ups and a life counsellor &mdash; strong structure and supervision.</p>
+              <p class="i-ja" lang="ja">キャンパス隣接の寮、年4回の入学時期、健康診断と生活カウンセラー。手厚い管理体制が魅力です。</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal" style="margin-top:28px; background:var(--navy); color:var(--white); border-radius:14px; padding:28px 32px; text-align:center;">
+          <h3 style="color:var(--white); margin-bottom:8px;"><span class="i-en">＋ 3 more partner schools in Tokyo</span><span class="i-ja" lang="ja">＋ 東京にさらに3つのパートナー校</span></h3>
+          <p class="i-en" style="color:rgba(255,255,255,0.75); margin:0; max-width:640px; margin-left:auto; margin-right:auto;">Our school network keeps growing. When we match you, we choose from every school in our network &mdash; the one that fits your age, documents, budget, and goal.</p>
+          <p class="i-ja" lang="ja" style="color:rgba(255,255,255,0.75); margin:0; max-width:640px; margin-left:auto; margin-right:auto;">パートナー校のネットワークは拡大中です。マッチングの際は、年齢・書類・予算・目標に最も合う学校をネットワーク全体から選びます。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HONEST EXPECTATIONS -->
+    <section class="section" id="honest-expectations">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label"><span class="i-en">The Honest Part</span><span class="i-ja" lang="ja">正直にお伝えします</span></span>
+          <h2 class="i-en">What nobody else tells you &mdash; but we do</h2>
+          <h2 class="i-ja" lang="ja">他では語られないこと — 私たちは伝えます</h2>
+        </div>
+        <div class="grid-3 mt-40">
+          <div class="pillar-card reveal">
+            <h3><span class="i-en">Working while studying</span><span class="i-ja" lang="ja">学びながら働く</span></h3>
+            <p class="i-en">A student visa allows part-time work up to the legal maximum of 28 hours per week. It helps with living costs &mdash; it does not pay your tuition. Anyone who tells you that you can cover everything by working in Japan is selling you a story.</p>
+            <p class="i-ja" lang="ja">留学ビザでは法定上限の週28時間までアルバイトが可能です。生活費の足しにはなりますが、学費は賄えません。「働けば全部払える」と言う業者の話を信じないでください。</p>
+          </div>
+          <div class="pillar-card reveal">
+            <h3><span class="i-en">Your sponsor matters</span><span class="i-ja" lang="ja">スポンサーの重要性</span></h3>
+            <p class="i-en">Japan expects a sponsor with documented, explainable funds &mdash; and bank history matters more than the balance. A sudden large deposit is the fastest way to a refusal. Start preparing early.</p>
+            <p class="i-ja" lang="ja">日本側は、出所を証明できる資金を持つスポンサーを求めます。残高よりも銀行取引の履歴が重視され、急な大口入金は不許可への近道です。早めの準備が鍵です。</p>
+          </div>
+          <div class="pillar-card reveal">
+            <h3><span class="i-en">The real timeline</span><span class="i-ja" lang="ja">現実的なスケジュール</span></h3>
+            <p class="i-en">Japanese language schools accept students on fixed intakes, and applications close months before the start date. Realistically, plan for around 10 to 14 months from your first class to your first day in Japan.</p>
+            <p class="i-ja" lang="ja">日本語学校の入学時期は決まっており、出願は開始数か月前に締め切られます。最初の授業から日本での初日まで、現実的には約10〜14か月を見込んでください。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container text-center">
+        <h2 class="i-en">Ready to start your pathway?</h2>
+        <h2 class="i-ja" lang="ja">あなたの道のりを始めませんか？</h2>
+        <p class="i-en">Ask us anything about the Japan Ready Program &mdash; the course, the schools, the documents, the timeline. We answer honestly.</p>
+        <p class="i-ja" lang="ja">ジャパン・レディ・プログラムについて、コース・学校・書類・スケジュールなど何でもご質問ください。正直にお答えします。</p>
+        <div class="btn-actions" style="justify-content:center;">
+          <a href="contact.html" class="btn btn-white"><span class="i-en">Contact Us</span><span class="i-ja" lang="ja">お問い合わせ</span></a>
+          <a href="maya-nihongo.html" class="btn btn-outline-white"><span class="i-en">About Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語について</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">EthioMirai</div>
+          <p class="footer-tagline i-en">A Japan&ndash;Ethiopia bridge organization &mdash; connecting the two countries through Education, Cultural Exchange, and Business Partnerships. Bridging Nations. Creating Futures.</p>
+          <p class="footer-tagline i-ja" lang="ja">エチオ未来は、教育・文化交流・ビジネスパートナーシップを通じて日本とエチオピアをつなぐブリッジ組織です。Bridging Nations. Creating Futures.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/142893846/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z" fill="currentColor"/></svg></a>
+            <a href="https://www.tiktok.com/@ethiomirai" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.53.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" fill="currentColor"/></svg></a>
+            <a href="https://www.facebook.com/profile.php?id=61594065704749" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.5 9.87v-6.99H7.9v-2.88h2.6V9.8c0-2.57 1.53-4 3.87-4 1.11 0 2.27.2 2.27.2v2.5h-1.28c-1.26 0-1.65.78-1.65 1.58v1.9h2.81l-.45 2.88h-2.36v6.99A10 10 0 0 0 22 12z" fill="currentColor"/></svg></a>
+          </div>
+          <p style="font-size:0.78rem;color:var(--gray-500);margin-top:14px;line-height:1.9;">
+            <span class="i-en">Yamato Building 405, 1-6-16 Kanda Izumicho,<br>Chiyoda-ku, Tokyo 101-0024, Japan</span>
+            <span class="i-ja" lang="ja">〒101-0024<br>東京都千代田区神田和泉町1番地6-16<br>ヤマトビル405</span><br>
+            <a href="tel:+818043611641" style="color:inherit;text-decoration:none;">+81 80-4361-1641</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4><span class="i-en">Organization</span><span class="i-ja" lang="ja">組織</span></h4>
+          <ul>
+            <li><a href="about.html"><span class="i-en">About Us</span><span class="i-ja" lang="ja">私たちについて</span></a></li>
+            <li><a href="services.html"><span class="i-en">What We Do</span><span class="i-ja" lang="ja">事業内容</span></a></li>
+            <li><a href="news.html"><span class="i-en">News</span><span class="i-ja" lang="ja">ニュース</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4><span class="i-en">Our Pillars</span><span class="i-ja" lang="ja">3つの柱</span></h4>
+          <ul>
+            <li><a href="services.html#education"><span class="i-en">Education &amp; Opportunity</span><span class="i-ja" lang="ja">教育と機会</span></a></li>
+            <li class="footer-sub-item"><a href="maya-nihongo.html"><span class="i-en">Maya Nihongo</span><span class="i-ja" lang="ja">マヤ日本語</span></a></li>
+            <li><a href="services.html#cultural-exchange"><span class="i-en">Tourism &amp; Cultural Exchange</span><span class="i-ja" lang="ja">観光と文化交流</span></a></li>
+            <li><a href="services.html#business"><span class="i-en">Business &amp; Partnership Support</span><span class="i-ja" lang="ja">ビジネスと提携支援</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4><span class="i-en">Contact</span><span class="i-ja" lang="ja">お問い合わせ</span></h4>
+          <ul>
+            <li><a href="contact.html"><span class="i-en">Get in Touch</span><span class="i-ja" lang="ja">お問い合わせフォーム</span></a></li>
+            <li><a href="contact.html#partnership"><span class="i-en">Partnership Inquiry</span><span class="i-ja" lang="ja">提携のご相談</span></a></li>
+            <li><a href="contact.html#business"><span class="i-en">Business Inquiry</span><span class="i-ja" lang="ja">ビジネスのご相談</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 EthioMirai. All rights reserved.</span>
+        <span>Ethiopia &mdash; Japan</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
