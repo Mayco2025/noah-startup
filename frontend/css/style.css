@@ -2262,21 +2262,20 @@ p:last-child { margin-bottom: 0; }
   font-weight: 700;
   letter-spacing: 0.02em;
   white-space: nowrap;
+  background: linear-gradient(120deg, var(--brand-green) 20%, var(--brand-blue) 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: var(--brand-green);
-  opacity: 0.9;
-}
-@supports (-webkit-text-stroke: 1.5px #fff) {
-  .marquee-track span:not([lang="ja"]) {
-    color: transparent;
-    opacity: 1;
-    -webkit-text-stroke: 1.5px rgba(27,122,61,0.75);
-  }
 }
 .marquee-track span[lang="ja"] {
   font-family: 'Noto Serif JP', serif;
   font-size: clamp(1.4rem, 2.6vw, 2rem);
-  color: var(--navy, #1B3C8C);
-  opacity: 0.85;
+  background: linear-gradient(120deg, var(--brand-gold) 10%, var(--brand-red) 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--brand-red);
 }
 .marquee-track i {
   font-style: normal;
