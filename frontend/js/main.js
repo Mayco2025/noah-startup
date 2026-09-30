@@ -41,10 +41,17 @@
       if (!opt.hasAttribute('value')) opt.setAttribute('value', opt.dataset.en);
     });
 
-    /* <title> / meta description: data-title-ja etc. on <body> */
+    /* <title>: data-title-en / data-title-ja on <body> */
     const body = document.body;
     if (body && body.dataset.titleEn) {
       document.title = ja && body.dataset.titleJa ? body.dataset.titleJa : body.dataset.titleEn;
+    }
+
+    /* meta description: static EN content is the fallback; data-desc-ja on <body> */
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && body) {
+      if (!body.dataset.descEn) body.dataset.descEn = metaDesc.getAttribute('content') || '';
+      metaDesc.setAttribute('content', ja && body.dataset.descJa ? body.dataset.descJa : body.dataset.descEn);
     }
   }
 
@@ -125,6 +132,7 @@
     const href = (link.getAttribute('href') || '').split('/').pop().split('#')[0];
     if (href === currentFile || (currentFile === '' && href === 'index.html')) {
       link.classList.add('active');
+      link.setAttribute('aria-current', 'page');
     }
   });
   if (currentFile === 'services.html') {
@@ -200,16 +208,37 @@
     const btn = container.querySelector('.tab-btn[data-tab="' + target + '"]');
     const panel = container.querySelector('[data-panel="' + target + '"]');
     if (!btn || !panel) return false;
-    container.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    container.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active');
+      if (b.hasAttribute('role')) {
+        b.setAttribute('aria-selected', 'false');
+        b.setAttribute('tabindex', '-1');
+      }
+    });
     container.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
     btn.classList.add('active');
+    if (btn.hasAttribute('role')) {
+      btn.setAttribute('aria-selected', 'true');
+      btn.removeAttribute('tabindex');
+    }
     panel.classList.add('active');
     return true;
   };
   tabNavs.forEach(nav => {
     const container = nav.closest('.tab-section') || nav.closest('section') || document;
-    nav.querySelectorAll('.tab-btn').forEach(btn => {
+    const btns = Array.from(nav.querySelectorAll('.tab-btn'));
+    btns.forEach(btn => {
       btn.addEventListener('click', () => activateTab(container, btn.dataset.tab));
+    });
+    /* roving focus: left/right arrows move between tabs */
+    nav.addEventListener('keydown', (e) => {
+      if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+      const i = btns.indexOf(document.activeElement);
+      if (i === -1) return;
+      e.preventDefault();
+      const next = btns[(i + (e.key === 'ArrowRight' ? 1 : btns.length - 1)) % btns.length];
+      activateTab(container, next.dataset.tab);
+      next.focus();
     });
     const hashTarget = window.location.hash.slice(1);
     if (hashTarget) activateTab(container, hashTarget);
