@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=42">
+  <link rel="stylesheet" href="css/careers.css?v=3">
   <script>(function(){try{if(localStorage.getItem('em-lang')==='ja'){var d=document.documentElement;d.classList.remove('lang-en');d.classList.add('lang-ja');d.lang='ja';}}catch(e){}})();</script>
   <script type="application/ld+json">
   {
@@ -48,6 +49,33 @@
   </script>
 </head>
 <body class="page-body" data-title-en="EthioMirai — A Japan–Ethiopia Bridge Organization" data-title-ja="エチオ未来（EthioMirai）— 日本とエチオピアの架け橋" data-desc-ja="エチオ未来（EthioMirai）は、教育・文化交流・ビジネス提携を通じて日本とエチオピアをつなぐ架け橋団体です。">
+
+  <!-- TEMPORARY HIRING BANNER (auto-hides outside the recruitment window — see js/careers-config.js) -->
+  <a href="/careers/ethiopia-team-member/" class="hiring-banner" id="hiring-banner" hidden>
+    <span class="i-en"><strong>We're Hiring:</strong> Ethiopia Team Member — Coordination &amp; Operations.</span>
+    <span class="i-ja" lang="ja"><strong>採用情報：</strong>エチオピア現地チームメンバー（コーディネーション＆オペレーション）募集中。</span>
+    <span class="hiring-banner-cta"><span class="i-en">Apply now &rarr;</span><span class="i-ja" lang="ja">応募はこちら &rarr;</span></span>
+  </a>
+  <script src="js/careers-config.js?v=1"></script>
+  <script>
+    /* Show the hiring banner only while the recruitment window is open. */
+    (function () {
+      try {
+        var c = window.EM_CAREERS || {};
+        var now = Date.now();
+        var open = !(c.openAt && now < Date.parse(c.openAt)) && !(c.closeAt && now > Date.parse(c.closeAt));
+        if (open) {
+          var b = document.getElementById('hiring-banner');
+          b.hidden = false;
+          // The fixed header can be taller than the body's 70px offset — keep the banner clear of it.
+          window.addEventListener('load', function () {
+            var h = document.getElementById('site-header');
+            if (h && h.offsetHeight > 70) b.style.marginTop = (h.offsetHeight - 70) + 'px';
+          });
+        }
+      } catch (e) {}
+    })();
+  </script>
 
   <!-- NAVIGATION -->
   <header class="site-header" id="site-header">
